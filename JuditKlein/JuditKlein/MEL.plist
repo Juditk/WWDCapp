@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string></string>
+	<key>Projects</key>
+	<array>
+		<dict>
+			<key>ProjectName</key>
+			<string>/dev/world/11</string>
+			<key>ProjectBlurb</key>
+			<string>“Here and Now: Where am I and What’s Around Me?” (Melbourne, 2011).\n\n/dev/world is the annual developers conference run by the Apple Universities Consortium focused on iOS and Mac development.  This presentation covered how to integrate location awareness and contextually relevant content into an app.</string>
+			<key>ProjectURL</key>
+			<string>http://auc.edu.au/2011/09/here-and-now/</string>
+			<key>ProjectImagePrefix</key>
+			<string>mel0</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>/dev/world/12</string>
+			<key>ProjectBlurb</key>
+			<string>“Programming for Mobility” (Melbourne, 2012).\n\nBlurb: /dev/world is the annual developers conference run by the Apple Universities Consortium focused on iOS and Mac development. This presentation covered CoreLocation the bigger picture around harnessing the potential of being context aware: going beyond simply knowing where the user is and use that information to enhance user experience.</string>
+			<key>ProjectURL</key>
+			<string>http://auc.edu.au/2012/08/programming-for-mobility/</string>
+			<key>ProjectImagePrefix</key>
+			<string>mel1</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>/dev/world/13</string>
+			<key>ProjectBlurb</key>
+			<string>“Dual Screen Apps in iOS” (Melbourne, 2013)\n\n/dev/world is the annual developers conference run by the AUC focused on iOS and Mac development. This presentation looked at the untapped potential of utilising a secondary display in an iOS app and how to implement it. </string>
+			<key>ProjectURL</key>
+			<string>http://auc.edu.au/2013/08/dual-screen-apps-in-ios/</string>
+			<key>ProjectImagePrefix</key>
+			<string>mel2</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Create World Conference</string>
+			<key>ProjectBlurb</key>
+			<string>Create World is a performance, presentation, and professional development event, specifically for those who work in the digital arts disciplines.\n\n“Evolving tools, teaching and methods in technology enabled learning.” (Brisbane, 2011)\n\n“The Peripatetic Learner: harnessing the mobility of people and knowledge.” (Brisbane, 2012)</string>
+			<key>ProjectURL</key>
+			<string>http://auc.edu.au/2012/10/the-peripatetic-learner/</string>
+			<key>ProjectImagePrefix</key>
+			<string>mel3</string>
+		</dict>
+	</array>
+</dict>
+</plist>

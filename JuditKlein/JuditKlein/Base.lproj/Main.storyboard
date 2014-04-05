@@ -133,7 +133,7 @@
                         <outlet property="goToTXL" destination="jee-Ic-YF8" id="8fX-gE-J8x"/>
                         <outlet property="planeImage" destination="WQb-gN-ZOM" id="rQE-6S-Qu2"/>
                         <outlet property="view" destination="aEA-d9-MBw" id="9Yd-Uy-ZcB"/>
-                        <segue destination="w5O-uf-9cp" kind="push" id="0fq-fg-KMs"/>
+                        <segue destination="w5O-uf-9cp" kind="push" identifier="goto" id="0fq-fg-KMs"/>
                         <segue destination="skT-XB-ZHx" kind="modal" id="kWZ-8A-Zhy"/>
                     </connections>
                 </viewController>

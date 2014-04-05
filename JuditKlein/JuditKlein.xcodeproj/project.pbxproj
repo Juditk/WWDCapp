@@ -28,6 +28,13 @@
 		B2E9A2F018F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A2EE18F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib */; };
 		B2E9A2F418F0805300B1EC87 /* JKGCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2F318F0805300B1EC87 /* JKGCountryViewController.m */; };
 		B2E9A2F818F0836F00B1EC87 /* JKGCountryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2F718F0836F00B1EC87 /* JKGCountryDetailViewController.m */; };
+		B2E9A30018F0A5B800B1EC87 /* JKGDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2FF18F0A5B800B1EC87 /* JKGDatabase.m */; };
+		B2E9A30918F0A7F500B1EC87 /* AKL.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A30818F0A7F500B1EC87 /* AKL.plist */; };
+		B2E9A30B18F0C70000B1EC87 /* TVU.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A30A18F0C70000B1EC87 /* TVU.plist */; };
+		B2E9A30D18F0C76300B1EC87 /* MEL.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A30C18F0C76300B1EC87 /* MEL.plist */; };
+		B2E9A30F18F0C87200B1EC87 /* SFO.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A30E18F0C87200B1EC87 /* SFO.plist */; };
+		B2E9A31118F0C8D400B1EC87 /* TXL.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A31018F0C8D400B1EC87 /* TXL.plist */; };
+		B2E9A31318F0C91800B1EC87 /* BUD.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A31218F0C91800B1EC87 /* BUD.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +80,14 @@
 		B2E9A2F318F0805300B1EC87 /* JKGCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKGCountryViewController.m; path = ../JKGCountryViewController.m; sourceTree = "<group>"; };
 		B2E9A2F618F0836F00B1EC87 /* JKGCountryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKGCountryDetailViewController.h; sourceTree = "<group>"; };
 		B2E9A2F718F0836F00B1EC87 /* JKGCountryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKGCountryDetailViewController.m; sourceTree = "<group>"; };
+		B2E9A2FE18F0A5B800B1EC87 /* JKGDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKGDatabase.h; sourceTree = "<group>"; };
+		B2E9A2FF18F0A5B800B1EC87 /* JKGDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKGDatabase.m; sourceTree = "<group>"; };
+		B2E9A30818F0A7F500B1EC87 /* AKL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AKL.plist; sourceTree = "<group>"; };
+		B2E9A30A18F0C70000B1EC87 /* TVU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TVU.plist; sourceTree = "<group>"; };
+		B2E9A30C18F0C76300B1EC87 /* MEL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MEL.plist; sourceTree = "<group>"; };
+		B2E9A30E18F0C87200B1EC87 /* SFO.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFO.plist; sourceTree = "<group>"; };
+		B2E9A31018F0C8D400B1EC87 /* TXL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TXL.plist; sourceTree = "<group>"; };
+		B2E9A31218F0C91800B1EC87 /* BUD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BUD.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +147,7 @@
 		B2E9A2B018F07D3700B1EC87 /* JuditKlein */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A30118F0A79700B1EC87 /* Country Information */,
 				B2E9A2B918F07D3700B1EC87 /* JKGAppDelegate.h */,
 				B2E9A2BA18F07D3700B1EC87 /* JKGAppDelegate.m */,
 				B2E9A2BC18F07D3700B1EC87 /* Main.storyboard */,
@@ -176,6 +192,7 @@
 		B2E9A2DF18F07D6700B1EC87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A2FD18F0A5A300B1EC87 /* Database */,
 				B2E9A2E218F07DDB00B1EC87 /* JKGSafetyVideo.h */,
 				B2E9A2E318F07DDB00B1EC87 /* JKGSafetyVideo.m */,
 				B2E9A2E518F07E0200B1EC87 /* JKGCountry.h */,
@@ -239,6 +256,76 @@
 				B2E9A2F718F0836F00B1EC87 /* JKGCountryDetailViewController.m */,
 			);
 			name = "Country Detali";
+			sourceTree = "<group>";
+		};
+		B2E9A2FD18F0A5A300B1EC87 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A2FE18F0A5B800B1EC87 /* JKGDatabase.h */,
+				B2E9A2FF18F0A5B800B1EC87 /* JKGDatabase.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		B2E9A30118F0A79700B1EC87 /* Country Information */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A30718F0A7DD00B1EC87 /* AKL */,
+				B2E9A30618F0A7D500B1EC87 /* TVU */,
+				B2E9A30518F0A7CD00B1EC87 /* MEL */,
+				B2E9A30418F0A7C400B1EC87 /* SFO */,
+				B2E9A30318F0A7BC00B1EC87 /* TXL */,
+				B2E9A30218F0A7AA00B1EC87 /* BUD */,
+			);
+			name = "Country Information";
+			sourceTree = "<group>";
+		};
+		B2E9A30218F0A7AA00B1EC87 /* BUD */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A31218F0C91800B1EC87 /* BUD.plist */,
+			);
+			name = BUD;
+			sourceTree = "<group>";
+		};
+		B2E9A30318F0A7BC00B1EC87 /* TXL */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A31018F0C8D400B1EC87 /* TXL.plist */,
+			);
+			name = TXL;
+			sourceTree = "<group>";
+		};
+		B2E9A30418F0A7C400B1EC87 /* SFO */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A30E18F0C87200B1EC87 /* SFO.plist */,
+			);
+			name = SFO;
+			sourceTree = "<group>";
+		};
+		B2E9A30518F0A7CD00B1EC87 /* MEL */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A30C18F0C76300B1EC87 /* MEL.plist */,
+			);
+			name = MEL;
+			sourceTree = "<group>";
+		};
+		B2E9A30618F0A7D500B1EC87 /* TVU */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A30A18F0C70000B1EC87 /* TVU.plist */,
+			);
+			name = TVU;
+			sourceTree = "<group>";
+		};
+		B2E9A30718F0A7DD00B1EC87 /* AKL */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A30818F0A7F500B1EC87 /* AKL.plist */,
+			);
+			name = AKL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,10 +405,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E9A31318F0C91800B1EC87 /* BUD.plist in Resources */,
+				B2E9A30D18F0C76300B1EC87 /* MEL.plist in Resources */,
 				B2E9A2C318F07D3700B1EC87 /* Images.xcassets in Resources */,
 				B2E9A2B518F07D3700B1EC87 /* InfoPlist.strings in Resources */,
+				B2E9A30F18F0C87200B1EC87 /* SFO.plist in Resources */,
+				B2E9A31118F0C8D400B1EC87 /* TXL.plist in Resources */,
 				B2E9A2F018F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib in Resources */,
 				B2E9A2BE18F07D3700B1EC87 /* Main.storyboard in Resources */,
+				B2E9A30B18F0C70000B1EC87 /* TVU.plist in Resources */,
+				B2E9A30918F0A7F500B1EC87 /* AKL.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E9A2EF18F07FCC00B1EC87 /* JKGSafetyVideoViewController.m in Sources */,
+				B2E9A30018F0A5B800B1EC87 /* JKGDatabase.m in Sources */,
 				B2E9A2E718F07E0200B1EC87 /* JKGCountry.m in Sources */,
 				B2E9A2B718F07D3700B1EC87 /* main.m in Sources */,
 				B2E9A2F818F0836F00B1EC87 /* JKGCountryDetailViewController.m in Sources */,

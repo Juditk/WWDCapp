@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string></string>
+	<key>Projects</key>
+	<array>
+		<dict>
+			<key>ProjectName</key>
+			<string>Prezi</string>
+			<key>ProjectBlurb</key>
+			<string>I worked remotely with the Presentations Matter team, based in Prezi’s San Francisco office, to create presentations for high stakes presenters and organisations and as part of this team. My role was to collaborate with speakers and high stakes presenters on creating these.</string>
+			<key>ProjectURL</key>
+			<string></string>
+			<key>ProjectImagePrefix</key>
+			<string>sfo0</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>WWDC</string>
+			<key>ProjectBlurb</key>
+			<string>Living at the bottom of the world, here in New Zealand we’ve got a small yet strong developer community. Not having had any formal development training, so much I’ve learned has been from interacting with those who are more experienced but just as passionate as I am.\n\nI’ve previously been able to attend WWDC and the change to learn from the worldwide community and directly from the Apple engineers is incredibly beneficial. I’ve returned home, newly motivated and inspired to make great things.\n\nThis is the final of my 18 years as a student and the outcome of my masters degree will be an app I will take to the world. I would love the opportunity to get feedback on from the engineers in the labs and to submit it for an Apple Design Award. </string>
+			<key>ProjectURL</key>
+			<string></string>
+			<key>ProjectImagePrefix</key>
+			<string>sfo1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

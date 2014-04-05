@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string></string>
+	<key>Projects</key>
+	<array>
+		<dict>
+			<key>ProjectName</key>
+			<string>Bachelor of Creative Technologies (Honours) (First Class)</string>
+			<key>ProjectBlurb</key>
+			<string>Degree at Auckland University of Technology, New Zealand (2009-2012), completed November 2012.\n\nThe Creative Technologies degree brings together computer science, engineering, visual arts and engineering in practical, hands on studio based projects. I specialised in educational technology, completing my honours research project titled The Peripatetic Learner: The Role of Mobility in Emerging Pedagogical Practices.\n\nMy practical work focused on iOS Development in the context of tertiary education to explore how new mobile technologies offer opportunities to re-think tertiary educational practices. The final dissertation was delivered in interactive iBook format.</string>
+			<key>ProjectURL</key>
+			<string>http://tiny.cc/peripateticlearner
+
+</string>
+			<key>ProjectImagePrefix</key>
+			<string>akl0</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Master of Creative Technologyies</string>
+			<key>ProjectBlurb</key>
+			<string>Degree at Auckland University of Technology, New Zealand (2013-2014), target completion July 2014.\n\nA mix of theory and practical, my masters research examines the role of apps in tertiary education and notion of the ‘killer app’. The practical component of this research includes a fully functional app which supports dialogue and collaboration in a classroom environment using adhoc networking and iBeacon technology. \n\nThe ‘Syncrasy&apos; app is a tool for university students to collaborate in real time based on micro-locations within a physical classroom space and I will be submitting it for an Apple Design Award. </string>
+			<key>ProjectURL</key>
+			<string></string>
+			<key>ProjectImagePrefix</key>
+			<string>akl1</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Work Experience</string>
+			<key>ProjectBlurb</key>
+			<string>Auckland University of Technology, Centre for Learning and Teaching\n\n\Research Internship, Learning and Teaching Technology Enabler (LATTE) August 2011 - Present:\n\nCfLAT provides professional development for staff across AUT to develop and enhance teaching practice with a focus on implementing strategies that utilise new technologies to address issues of learning in a new age.\n\nThe responsibility of the LATTE team is to provide support for departments integrating the use of iPads in research, teaching, content management and creation. As a team leader, my responsibilities include identifying and addressing problems as they arise which has led to the implementation the university wide support structures we have in place today.\n\nI devise and implement projects we undertake and liaise with other departments, institutions and the wider industry. Projects have included developing an extensive FAQ and series of documents and running hands on workshops.</string>
+			<key>ProjectURL</key>
+			<string>http://cflat.aut.ac.nz/?page_id=589</string>
+			<key>ProjectImagePrefix</key>
+			<string>akl2</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Asciltie Conference Presentation</string>
+			<key>ProjectBlurb</key>
+			<string>Conference for the Australasian Society for Computers in Learning in Tertiary Education 
+Wellington 2012: Future Challenges, Sustainable Futures.\n\nConference presentation and published paper: The peripatetic learner - the role of mobility in the formation collaborative learning spaces.</string>
+			<key>ProjectURL</key>
+			<string>http://bit.ly/1jPlH03</string>
+			<key>ProjectImagePrefix</key>
+			<string>akl3</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Auckland Art Gallery App</string>
+			<key>ProjectBlurb</key>
+			<string>Auckland Art Gallery Audio Tour Guide (2010)\n\nThe Auckland City Art Gallery was exploring ways to create a more engaging way to deliver a multimedia audio tour guide. I worked as part of a team to develop a proof of concept that explores possible ways to deliver such a product on the iOS platform.</string>
+			<key>ProjectURL</key>
+			<string></string>
+			<key>ProjectImagePrefix</key>
+			<string>akl4</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Here and Now App</string>
+			<key>ProjectBlurb</key>
+			<string>Here and Now (2010) looked at the success of the &apos;daily deals&apos; movement and aimed to create a location based iPhone application around the premise of finding and redeeming limited time &apos;deals&apos; based on your location. </string>
+			<key>ProjectURL</key>
+			<string></string>
+			<key>ProjectImagePrefix</key>
+			<string>akl5</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>NZ Sound Walk App</string>
+			<key>ProjectBlurb</key>
+			<string>The brief for this project was simply to explore some aspect of &apos;sound&apos; within the context of an emerging practise. I chose to explore the relationship between sound and place and created a prototype location based &apos;sound walk&apos; for iOS. I used the iOS platform as a way of using the physicality of location as a way of manipulating sound. </string>
+			<key>ProjectURL</key>
+			<string></string>
+			<key>ProjectImagePrefix</key>
+			<string>akl6</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>The Great Exchange</string>
+			<key>ProjectBlurb</key>
+			<string>Consultant and project manager on a prototype app implemented at AUT University to present ecological concepts in an interactive manner as a teaching resource.</string>
+			<key>ProjectURL</key>
+			<string></string>
+			<key>ProjectImagePrefix</key>
+			<string>akl7</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Local Development Events</string>
+			<key>ProjectBlurb</key>
+			<string>I regularly attend and present at local technology and development related events around New Zealand. I have presented at events such as devMob and Codemania After Dark on topics related to iOS development, such as location awareness, MultiPeer Connectivity, and Dual Screen apps. I regularly contribute talks the monthly Auckland iOS Meetup.\n\nI liase with Apple ANZ on education related events around Auckand and have been asked to speak on multiple occasions during the iPad Learning Tours. </string>
+			<key>ProjectURL</key>
+			<string></string>
+			<key>ProjectImagePrefix</key>
+			<string>akl8</string>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Prezi Ambassador</string>
+			<key>ProjectBlurb</key>
+			<string>Actively promote Prezi brand and products at AUT University. My role was to create and execute a marketing plan as well as encouraging students and faculty to contribute to the open exchange of ideas in the Prezi community. I created learning resources and ran multiple training workshops.</string>
+			<key>ProjectURL</key>
+			<string>http://prezi.com/ambassadors/</string>
+			<key>ProjectImagePrefix</key>
+			<string>akl9</string>
+		</dict>
+	</array>
+</dict>
+</plist>

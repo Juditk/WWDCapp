@@ -43,6 +43,7 @@
 - (IBAction)destinationBUD:(id)sender
 {
     NSLog(@"Let's go to Hungary!");
+    [self performSegueWithIdentifier:@"goto" sender:sender];
 }
 
 - (IBAction)destinationTXL:(id)sender
@@ -71,6 +72,12 @@
 - (IBAction)destinationTVU:(id)sender
 {
     NSLog(@"Let's go to Fiji!");
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    countryViewController = segue.destinationViewController;
     
 }
 

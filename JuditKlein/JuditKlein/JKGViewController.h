@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JKGCountryViewController.h"
 
 @interface JKGViewController : UIViewController
 {
@@ -18,6 +19,7 @@
     UIButton *goToMEL;
     UIButton *goToSFO;
     UIButton *goToTVU;
+    JKGCountryViewController *countryViewController;
 }
 
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;

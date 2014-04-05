@@ -13,6 +13,7 @@
     NSString *projectBlurb;
     NSArray *supportingProjectImages;
     NSString *moreInfoURL;
+    NSString *imagePrefix;
 }
 
 @end

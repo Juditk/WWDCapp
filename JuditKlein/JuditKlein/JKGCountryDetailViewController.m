@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
     backgroundImage.image = [UIImage imageNamed:@"bgcolour"];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
 
 }
 

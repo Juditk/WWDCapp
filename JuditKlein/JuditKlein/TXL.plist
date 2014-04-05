@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string></string>
+	<key>Projects</key>
+	<array>
+		<dict>
+			<key>ProjectName</key>
+			<string>TEDxBerlin</string>
+			<key>ProjectBlurb</key>
+			<string> Lead designer on presentation for Mark Turrell, presenter at a TED event.</string>
+			<key>ProjectURL</key>
+			<string>http://www.tedxberlin.de/the-air-we-breathe-mark-turrell-at-tedxberlin
+http://www.tedxberlin.de/the-air-we-breathe-mark-turrell-at-tedxberlin</string>
+			<key>ProjectImagePrefix</key>
+			<string>txl0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
