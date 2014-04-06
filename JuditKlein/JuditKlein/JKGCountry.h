@@ -7,12 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JKGCountryProjectDetail.h"
 
 @interface JKGCountry : NSObject
 {
     NSString *countryName;
-    NSArray *countryProject;
+    NSMutableArray *countryProjects;
     
 }
+
+@property (nonatomic, strong) NSString *countryName;
+@property (nonatomic, strong) NSMutableArray *countryProjects;
+
+- (instancetype)initWithCountryDictionary: (NSDictionary*)countryDictionary;
 
 @end

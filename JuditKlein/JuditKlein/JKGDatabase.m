@@ -10,6 +10,8 @@
 
 @implementation JKGDatabase
 
+@synthesize countriesList;
+
 + (JKGDatabase *) sharedDatabase
 {
     static JKGDatabase *database = nil;
@@ -19,6 +21,37 @@
     });
     return database;
 }
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
+
+
+- (NSDictionary*)loadCountryWithShortName:(NSString*)countryShortName{
+    
+    if (!countryShortName)
+        return nil;
+    
+    NSDictionary *countryDict = nil;
+    
+    NSString* path = [[NSBundle mainBundle] pathForResource:countryShortName ofType:@"plist"];
+    
+    countryDict = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    if (countryDict) {
+        //NSLog(@"I have the following information for this country: %@",countryDict);
+    }
+    
+    return countryDict;
+    
+}
+
 
 
 @end

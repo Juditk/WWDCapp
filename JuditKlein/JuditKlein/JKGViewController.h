@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "JKGCountryViewController.h"
+#import "JKGDatabase.h"
+#import "JKGCountry.h"
 
 @interface JKGViewController : UIViewController
 {
@@ -19,7 +21,7 @@
     UIButton *goToMEL;
     UIButton *goToSFO;
     UIButton *goToTVU;
-    JKGCountryViewController *countryViewController;
+    NSString *countryCode;
 }
 
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;
@@ -30,6 +32,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *goToMEL;
 @property (nonatomic, strong) IBOutlet UIButton *goToSFO;
 @property (nonatomic, strong) IBOutlet UIButton *goToTVU;
+@property (nonatomic, strong) NSString *countryCode;
 
 - (IBAction)destinationBUD:(id)sender;
 - (IBAction)destinationTXL:(id)sender;

@@ -172,8 +172,9 @@
                     <navigationItem key="navigationItem" id="j2d-nu-OCX"/>
                     <connections>
                         <outlet property="backgroundImage" destination="Pbo-3e-nMS" id="8B3-yd-1he"/>
+                        <outlet property="tableView" destination="cm3-fM-9p2" id="fHY-O6-kCh"/>
                         <outlet property="view" destination="tbB-YU-Ltr" id="Jqs-uZ-Nqw"/>
-                        <segue destination="i3N-8z-M7A" kind="push" id="Izg-Bw-Xe5"/>
+                        <segue destination="i3N-8z-M7A" kind="push" identifier="showDetail" id="Izg-Bw-Xe5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ug-wI-p0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -196,12 +197,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-a5-zmC">
+                                <rect key="frame" x="20" y="73" width="280" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="euO-Bh-uLu"/>
                     <connections>
                         <outlet property="backgroundImage" destination="dkY-wk-KIp" id="1ZF-wO-oVM"/>
+                        <outlet property="textView" destination="gC2-a5-zmC" id="hMZ-9R-ZSh"/>
                         <outlet property="view" destination="JeE-fD-7J6" id="i1p-pg-UCW"/>
                     </connections>
                 </viewController>

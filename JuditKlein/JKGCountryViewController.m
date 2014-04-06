@@ -14,7 +14,7 @@
 
 @implementation JKGCountryViewController
 
-@synthesize backgroundImage;
+@synthesize backgroundImage,country, tableView, countryName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +30,7 @@
     [super viewDidLoad];
     backgroundImage.image = [UIImage imageNamed:@"bgcolour"];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    self.navigationItem.title = countryName;
 
 }
 
@@ -44,25 +45,52 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"Calling Num Rows %lu",(unsigned long)[[country countryProjects]count]);
     // Return the number of rows in the section.
-    return 0;
+    return [[country countryProjects]count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    UITableViewCell *cell;
+    static NSString *cellIdentifier = @"projectCell";
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    JKGCountryProjectDetail *projDetail = [[country countryProjects]objectAtIndex:indexPath.row];
+    cell.textLabel.text = projDetail.projectName;
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"showDetail" sender:nil];
 }
 
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    JKGCountryDetailViewController *countryDetailViewController = segue.destinationViewController;
+    NSIndexPath *myIndexPath = [self.tableView
+                                indexPathForSelectedRow];
+    JKGCountryProjectDetail *projDetail = [[country countryProjects]objectAtIndex:myIndexPath.row];
+    [countryDetailViewController setProjectDetail:projDetail];
+    
+
+
 }
-*/
 
 @end

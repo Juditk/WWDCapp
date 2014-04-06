@@ -147,9 +147,8 @@
 		B2E9A2B018F07D3700B1EC87 /* JuditKlein */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A31618F0E2D400B1EC87 /* App Delegate */,
 				B2E9A30118F0A79700B1EC87 /* Country Information */,
-				B2E9A2B918F07D3700B1EC87 /* JKGAppDelegate.h */,
-				B2E9A2BA18F07D3700B1EC87 /* JKGAppDelegate.m */,
 				B2E9A2BC18F07D3700B1EC87 /* Main.storyboard */,
 				B2E9A2DF18F07D6700B1EC87 /* Models */,
 				B2E9A2E018F07D6C00B1EC87 /* Views */,
@@ -326,6 +325,15 @@
 				B2E9A30818F0A7F500B1EC87 /* AKL.plist */,
 			);
 			name = AKL;
+			sourceTree = "<group>";
+		};
+		B2E9A31618F0E2D400B1EC87 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A2B918F07D3700B1EC87 /* JKGAppDelegate.h */,
+				B2E9A2BA18F07D3700B1EC87 /* JKGAppDelegate.m */,
+			);
+			name = "App Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

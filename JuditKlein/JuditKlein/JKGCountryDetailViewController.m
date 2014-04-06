@@ -14,7 +14,7 @@
 
 @implementation JKGCountryDetailViewController
 
-@synthesize backgroundImage;
+@synthesize backgroundImage, projectDetail, textView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +30,15 @@
     [super viewDidLoad];
     backgroundImage.image = [UIImage imageNamed:@"bgcolour"];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-
+    
+    NSMutableString *contentString = [NSMutableString stringWithFormat:@"%@",projectDetail.projectBlurb];
+    
+    if ( ![projectDetail.moreInfoURL isEqualToString:@""]) {
+        NSString *urlString = [NSString stringWithFormat:@"\n\nMore information: %@",projectDetail.moreInfoURL];
+        [contentString appendString:urlString];
+    }
+    
+    textView.text = contentString;
 
 }
 

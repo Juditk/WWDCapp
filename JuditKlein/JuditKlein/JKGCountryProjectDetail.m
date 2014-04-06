@@ -10,4 +10,28 @@
 
 @implementation JKGCountryProjectDetail
 
+@synthesize imagePrefix, moreInfoURL, projectBlurb, supportingProjectImages, projectName;
+
+- (instancetype)initWithDictionary: (NSDictionary*) projectDictionary
+{
+    self = [super init];
+    if (self) {
+        
+        projectName  = [projectDictionary objectForKey:@"ProjectName"];
+        projectBlurb = [projectDictionary objectForKey:@"ProjectBlurb"];
+        moreInfoURL  = [projectDictionary objectForKey:@"ProjectURL"];
+        imagePrefix  = [projectDictionary objectForKey:@"ProjectImagePrefix"];
+        
+    }
+    return self;
+}
+
+-(void)loadImagesForProject
+{
+    //enumerate directory
+    //get all the filepaths for images with the prefix
+    //set them in the array
+    
+}
+
 @end

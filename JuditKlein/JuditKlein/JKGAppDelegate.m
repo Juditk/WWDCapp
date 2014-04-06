@@ -7,6 +7,7 @@
 //
 
 #import "JKGAppDelegate.h"
+#import "JKGDatabase.h"
 
 @implementation JKGAppDelegate
 

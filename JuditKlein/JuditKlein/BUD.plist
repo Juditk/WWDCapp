@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>Name</key>
-	<string></string>
+	<string>Hungary</string>
 	<key>Projects</key>
 	<array>
 		<dict>
 			<key>ProjectName</key>
 			<string>Prezi</string>
 			<key>ProjectBlurb</key>
-			<string>Internship position at the head office of Prezi in Budapest, Hungary (August-September 2013). As part of the Learn Team, my role was to design and create tutorials and other informative content to be incorporated into the Prezi usage manual to assist Prezi users in creating beautiful presentations.\n\nUpon completion of the internship, I continued to work remotely for the Learn Team until December 2013.\n\nI selected for an internship as a top performer in their Campus Ambassador Program.</string>
+			<string>Internship position at the head office of Prezi in Budapest, Hungary (August-September 2013). As part of the Learn Team, my role was to design and create tutorials and other informative content to be incorporated into the Prezi usage manual to assist Prezi users in creating beautiful presentations.
+                
+Upon completion of the internship, I continued to work remotely for the Learn Team until December 2013.
+                
+I selected for an internship as a top performer in their Campus Ambassador Program.</string>
 			<key>ProjectURL</key>
 			<string>https://prezi.com/support/manual/preziapplication-tutorial/</string>
 			<key>ProjectImagePrefix</key>

@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>Name</key>
-	<string></string>
+	<string>New Zealand</string>
 	<key>Projects</key>
 	<array>
 		<dict>
 			<key>ProjectName</key>
-			<string>Bachelor of Creative Technologies (Honours) (First Class)</string>
+			<string>Bachelors Degree</string>
 			<key>ProjectBlurb</key>
-			<string>Degree at Auckland University of Technology, New Zealand (2009-2012), completed November 2012.\n\nThe Creative Technologies degree brings together computer science, engineering, visual arts and engineering in practical, hands on studio based projects. I specialised in educational technology, completing my honours research project titled The Peripatetic Learner: The Role of Mobility in Emerging Pedagogical Practices.\n\nMy practical work focused on iOS Development in the context of tertiary education to explore how new mobile technologies offer opportunities to re-think tertiary educational practices. The final dissertation was delivered in interactive iBook format.</string>
+			<string>Bachelor of Creative Technologies (Honours) (First Class), Auckland University of Technology, New Zealand (2009-2012), completed November 2012.
+                
+The Creative Technologies degree brings together computer science, engineering, visual arts and engineering in practical, hands on studio based projects. I specialised in educational technology, completing my honours research project titled The Peripatetic Learner: The Role of Mobility in Emerging Pedagogical Practices.
+                
+My practical work focused on iOS Development in the context of tertiary education to explore how new mobile technologies offer opportunities to re-think tertiary educational practices. The final dissertation was delivered in interactive iBook format.</string>
 			<key>ProjectURL</key>
 			<string>http://tiny.cc/peripateticlearner
 
@@ -20,9 +24,13 @@
 		</dict>
 		<dict>
 			<key>ProjectName</key>
-			<string>Master of Creative Technologyies</string>
+			<string>Masters Degree</string>
 			<key>ProjectBlurb</key>
-			<string>Degree at Auckland University of Technology, New Zealand (2013-2014), target completion July 2014.\n\nA mix of theory and practical, my masters research examines the role of apps in tertiary education and notion of the ‘killer app’. The practical component of this research includes a fully functional app which supports dialogue and collaboration in a classroom environment using adhoc networking and iBeacon technology. \n\nThe ‘Syncrasy&apos; app is a tool for university students to collaborate in real time based on micro-locations within a physical classroom space and I will be submitting it for an Apple Design Award. </string>
+			<string>Master of Creative Technolgies Degree at Auckland University of Technology, New Zealand (2013-2014), target completion July 2014.
+                
+A mix of theory and practical, my masters research examines the role of apps in tertiary education and notion of the ‘killer app’. The practical component of this research includes a fully functional app which supports dialogue and collaboration in a classroom environment using adhoc networking and iBeacon technology.
+                
+The ‘Syncrasy&apos; app is a tool for university students to collaborate in real time based on micro-locations within a physical classroom space and I will be submitting it for an Apple Design Award. </string>
 			<key>ProjectURL</key>
 			<string></string>
 			<key>ProjectImagePrefix</key>
@@ -32,7 +40,13 @@
 			<key>ProjectName</key>
 			<string>Work Experience</string>
 			<key>ProjectBlurb</key>
-			<string>Auckland University of Technology, Centre for Learning and Teaching\n\n\Research Internship, Learning and Teaching Technology Enabler (LATTE) August 2011 - Present:\n\nCfLAT provides professional development for staff across AUT to develop and enhance teaching practice with a focus on implementing strategies that utilise new technologies to address issues of learning in a new age.\n\nThe responsibility of the LATTE team is to provide support for departments integrating the use of iPads in research, teaching, content management and creation. As a team leader, my responsibilities include identifying and addressing problems as they arise which has led to the implementation the university wide support structures we have in place today.\n\nI devise and implement projects we undertake and liaise with other departments, institutions and the wider industry. Projects have included developing an extensive FAQ and series of documents and running hands on workshops.</string>
+			<string>Auckland University of Technology, Centre for Learning and Teaching, Research Internship, Learning and Teaching Technology Enabler (LATTE) August 2011 - Present:
+                
+CfLAT provides professional development for staff across AUT to develop and enhance teaching practice with a focus on implementing strategies that utilise new technologies to address issues of learning in a new age.
+                
+The responsibility of the LATTE team is to provide support for departments integrating the use of iPads in research, teaching, content management and creation. As a team leader, my responsibilities include identifying and addressing problems as they arise which has led to the implementation the university wide support structures we have in place today.
+                
+I devise and implement projects we undertake and liaise with other departments, institutions and the wider industry. Projects have included developing an extensive FAQ and series of documents and running hands on workshops.</string>
 			<key>ProjectURL</key>
 			<string>http://cflat.aut.ac.nz/?page_id=589</string>
 			<key>ProjectImagePrefix</key>
@@ -40,10 +54,12 @@
 		</dict>
 		<dict>
 			<key>ProjectName</key>
-			<string>Asciltie Conference Presentation</string>
+			<string>Asciltie Conference</string>
 			<key>ProjectBlurb</key>
-			<string>Conference for the Australasian Society for Computers in Learning in Tertiary Education 
-Wellington 2012: Future Challenges, Sustainable Futures.\n\nConference presentation and published paper: The peripatetic learner - the role of mobility in the formation collaborative learning spaces.</string>
+			<string>Presentation at the Australasian Society for Computers in Learning in Tertiary Education conference.
+Wellington 2012: Future Challenges, Sustainable Futures.
+                
+Conference presentation and published paper: The peripatetic learner - the role of mobility in the formation collaborative learning spaces.</string>
 			<key>ProjectURL</key>
 			<string>http://bit.ly/1jPlH03</string>
 			<key>ProjectImagePrefix</key>
@@ -53,7 +69,9 @@ Wellington 2012: Future Challenges, Sustainable Futures.\n\nConference presentat
 			<key>ProjectName</key>
 			<string>Auckland Art Gallery App</string>
 			<key>ProjectBlurb</key>
-			<string>Auckland Art Gallery Audio Tour Guide (2010)\n\nThe Auckland City Art Gallery was exploring ways to create a more engaging way to deliver a multimedia audio tour guide. I worked as part of a team to develop a proof of concept that explores possible ways to deliver such a product on the iOS platform.</string>
+			<string>Auckland Art Gallery Audio Tour Guide (2010)
+                
+The Auckland City Art Gallery was exploring ways to create a more engaging way to deliver a multimedia audio tour guide. I worked as part of a team to develop a proof of concept that explores possible ways to deliver such a product on the iOS platform.</string>
 			<key>ProjectURL</key>
 			<string></string>
 			<key>ProjectImagePrefix</key>
@@ -93,7 +111,9 @@ Wellington 2012: Future Challenges, Sustainable Futures.\n\nConference presentat
 			<key>ProjectName</key>
 			<string>Local Development Events</string>
 			<key>ProjectBlurb</key>
-			<string>I regularly attend and present at local technology and development related events around New Zealand. I have presented at events such as devMob and Codemania After Dark on topics related to iOS development, such as location awareness, MultiPeer Connectivity, and Dual Screen apps. I regularly contribute talks the monthly Auckland iOS Meetup.\n\nI liase with Apple ANZ on education related events around Auckand and have been asked to speak on multiple occasions during the iPad Learning Tours. </string>
+			<string>I regularly attend and present at local technology and development related events around New Zealand. I have presented at events such as devMob and Codemania After Dark on topics related to iOS development, such as location awareness, MultiPeer Connectivity, and Dual Screen apps. I regularly contribute talks the monthly Auckland iOS Meetup.
+                
+I liase with Apple ANZ on education related events around Auckand and have been asked to speak on multiple occasions during the iPad Learning Tours. </string>
 			<key>ProjectURL</key>
 			<string></string>
 			<key>ProjectImagePrefix</key>

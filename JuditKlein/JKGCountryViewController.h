@@ -7,12 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JKGCountry.h"
+#import "JKGCountryDetailViewController.h"
+#import "JKGCountryProjectDetail.h"
 
 @interface JKGCountryViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     UIImageView *backgroundImage;
+    JKGCountry *country;
+    NSString *countryName;
+    UITableView *tableView;
+    
 }
-
+@property (nonatomic, strong) JKGCountry *country;
+@property (nonatomic, strong) NSString *countryName;
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end

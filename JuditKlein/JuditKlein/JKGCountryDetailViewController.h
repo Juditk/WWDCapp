@@ -7,13 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JKGCountryProjectDetail.h"
 
 @interface JKGCountryDetailViewController : UIViewController
 {
     UIImageView *backgroundImage;
+    JKGCountryProjectDetail *projectDetail;
+    UITextView *textView;
+    
 }
 
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic, strong) JKGCountryProjectDetail *projectDetail;
+@property (nonatomic, strong) IBOutlet UITextView *textView;
 
 
 @end

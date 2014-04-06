@@ -9,7 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface JKGDatabase : NSObject
+{
+    NSDictionary *countriesList;
+}
+
+@property (nonatomic, strong) NSDictionary *countriesList;
 
 + (JKGDatabase *) sharedDatabase;
+- (NSDictionary*)loadCountryWithShortName:(NSString*)countryShortName;
 
 @end
