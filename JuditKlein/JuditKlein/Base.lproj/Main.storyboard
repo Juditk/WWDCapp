@@ -114,8 +114,8 @@
                                     <action selector="destinationAKL:" destination="Yyd-as-VEp" eventType="touchUpInside" id="Fba-91-hFc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-gN-ZOM">
-                                <rect key="frame" x="120" y="226" width="80" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-gN-ZOM">
+                                <rect key="frame" x="120" y="227" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap on an airport to take off." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-gj-mbf">
@@ -134,6 +134,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="WQb-gN-ZOM" secondAttribute="centerX" id="6qd-0K-QhK"/>
+                            <constraint firstAttribute="centerY" secondItem="WQb-gN-ZOM" secondAttribute="centerY" constant="17" id="wdk-26-ZHG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CcU-4v-0Yk"/>
                     <nil key="simulatedStatusBarMetrics"/>

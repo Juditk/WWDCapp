@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import <CoreLocation/CoreLocation.h>
 #import "JKGCountryViewController.h"
 #import "JKGDatabase.h"
 #import "JKGCountry.h"
 
-@interface JKGViewController : UIViewController
+@interface JKGViewController : UIViewController <CLLocationManagerDelegate>
 {
     UIImageView *backgroundImage;
     UIImageView *planeImage;
@@ -22,6 +24,8 @@
     UIButton *goToSFO;
     UIButton *goToTVU;
     NSString *countryCode;
+    CLLocationManager *locationManager;
+    NSMutableArray *queue;
 }
 
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;
@@ -33,6 +37,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *goToSFO;
 @property (nonatomic, strong) IBOutlet UIButton *goToTVU;
 @property (nonatomic, strong) NSString *countryCode;
+@property (nonatomic, strong) CLLocationManager *locationManager;
 
 - (IBAction)destinationBUD:(id)sender;
 - (IBAction)destinationTXL:(id)sender;

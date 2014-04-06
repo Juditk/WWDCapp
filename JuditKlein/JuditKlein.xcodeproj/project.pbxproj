@@ -45,6 +45,8 @@
 		B2E9A33318F1B7B500B1EC87 /* bud06.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32B18F1B7B500B1EC87 /* bud06.png */; };
 		B2E9A33418F1B7B500B1EC87 /* bud08.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32C18F1B7B500B1EC87 /* bud08.png */; };
 		B2E9A33518F1B7B500B1EC87 /* bud09.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32D18F1B7B500B1EC87 /* bud09.png */; };
+		B2E9A33D18F1F27E00B1EC87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A33C18F1F27E00B1EC87 /* QuartzCore.framework */; };
+		B2E9A33F18F1F28500B1EC87 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A33E18F1F28500B1EC87 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		B2E9A32B18F1B7B500B1EC87 /* bud06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud06.png; sourceTree = "<group>"; };
 		B2E9A32C18F1B7B500B1EC87 /* bud08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud08.png; sourceTree = "<group>"; };
 		B2E9A32D18F1B7B500B1EC87 /* bud09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud09.png; sourceTree = "<group>"; };
+		B2E9A33C18F1F27E00B1EC87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B2E9A33E18F1F28500B1EC87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E9A33F18F1F28500B1EC87 /* CoreLocation.framework in Frameworks */,
+				B2E9A33D18F1F27E00B1EC87 /* QuartzCore.framework in Frameworks */,
 				B2E9A2AD18F07D3700B1EC87 /* CoreGraphics.framework in Frameworks */,
 				B2E9A2AF18F07D3700B1EC87 /* UIKit.framework in Frameworks */,
 				B2E9A2AB18F07D3700B1EC87 /* Foundation.framework in Frameworks */,
@@ -157,6 +163,8 @@
 		B2E9A2A918F07D3700B1EC87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A33E18F1F28500B1EC87 /* CoreLocation.framework */,
+				B2E9A33C18F1F27E00B1EC87 /* QuartzCore.framework */,
 				B2E9A2AA18F07D3700B1EC87 /* Foundation.framework */,
 				B2E9A2AC18F07D3700B1EC87 /* CoreGraphics.framework */,
 				B2E9A2AE18F07D3700B1EC87 /* UIKit.framework */,

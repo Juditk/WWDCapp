@@ -14,7 +14,7 @@
 
 @implementation JKGViewController
 
-@synthesize backgroundImage, planeImage, goToAKL, goToBUD, goToMEL, goToSFO, goToTVU, goToTXL, countryCode;
+@synthesize backgroundImage, planeImage, goToAKL, goToBUD, goToMEL, goToSFO, goToTVU, goToTXL, countryCode, locationManager;
 
 - (void)viewDidLoad
 {
@@ -24,15 +24,16 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     planeImage.image = [UIImage imageNamed:@"plane"];
+    queue = [[NSMutableArray alloc]init];
     
     [self setImageStates];
-
 
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self setUpLocation];
     [self setImageStates];
 }
 
@@ -47,16 +48,38 @@
     NSLog(@"Let's go to Hungary!");
     countryCode = @"BUD";
     [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
-    [self performSegueWithIdentifier:@"goto" sender:sender];
+    
+    [locationManager stopUpdatingHeading];
+    
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         planeImage.transform = CGAffineTransformMakeRotation((-1 * 50 * M_PI) /180);
+                     }
+                     completion:^(BOOL finished) {
+                         [self performSegueWithIdentifier:@"goto" sender:sender];
+                     }];
 }
+//145 180 220 319 0
 
 - (IBAction)destinationTXL:(id)sender
 {
     NSLog(@"Let's go to Germany!");
     countryCode = @"TXL";
     [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
-    [self performSegueWithIdentifier:@"goto" sender:sender];
 
+    [locationManager stopUpdatingHeading];
+    
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         planeImage.transform = CGAffineTransformMakeRotation((-1 * 320 * M_PI) /180);
+                     }
+                     completion:^(BOOL finished) {
+                         [self performSegueWithIdentifier:@"goto" sender:sender];
+                     }];
 }
 
 - (IBAction)destinationAKL:(id)sender
@@ -64,8 +87,18 @@
     NSLog(@"Let's go to New Zealand!");
     countryCode = @"AKL";
     [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
-    [self performSegueWithIdentifier:@"goto" sender:sender];
+
+    [locationManager stopUpdatingHeading];
     
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         planeImage.transform = CGAffineTransformMakeRotation((-1 * 220 * M_PI) /180);
+                     }
+                     completion:^(BOOL finished) {
+                         [self performSegueWithIdentifier:@"goto" sender:sender];
+                     }];
 }
 
 - (IBAction)destinationMEL:(id)sender
@@ -73,8 +106,18 @@
     NSLog(@"Let's go to Australia!");
     countryCode = @"MEL";
     [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
-    [self performSegueWithIdentifier:@"goto" sender:sender];
+
+    [locationManager stopUpdatingHeading];
     
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         planeImage.transform = CGAffineTransformMakeRotation((-1 * 180 * M_PI) /180);
+                     }
+                     completion:^(BOOL finished) {
+                         [self performSegueWithIdentifier:@"goto" sender:sender];
+                     }];
 }
 
 - (IBAction)destinationSFO:(id)sender
@@ -82,8 +125,18 @@
     NSLog(@"Let's go to USA!");
     countryCode = @"SFO";
     [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
-    [self performSegueWithIdentifier:@"goto" sender:sender];
+
+    [locationManager stopUpdatingHeading];
     
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         planeImage.transform = CGAffineTransformMakeRotation((-1 * 0 * M_PI) /180);
+                     }
+                     completion:^(BOOL finished) {
+                         [self performSegueWithIdentifier:@"goto" sender:sender];
+                     }];
 }
 
 - (IBAction)destinationTVU:(id)sender
@@ -91,8 +144,18 @@
     NSLog(@"Let's go to Fiji!");
     countryCode = @"TVU";
     [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
-    [self performSegueWithIdentifier:@"goto" sender:sender];
+
+    [locationManager stopUpdatingHeading];
     
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         planeImage.transform = CGAffineTransformMakeRotation((-1 * 145 * M_PI) /180);
+                     }
+                     completion:^(BOOL finished) {
+                         [self performSegueWithIdentifier:@"goto" sender:sender];
+                     }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -144,6 +207,62 @@
     [goToMEL.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToMEL setImage:[self getButtonStateForCountry:@"MEL"] forState:UIControlStateNormal];
 }
+
+#pragma mark location manager
+
+- (void)setUpLocation
+{
+    locationManager=[[CLLocationManager alloc] init];
+	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+	locationManager.headingFilter = 1;
+	locationManager.delegate=self;
+	[locationManager startUpdatingHeading];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)heading
+{
+    int newHeading;
+    int queuecount;
+    
+    newHeading = heading.trueHeading;
+    [queue addObject:[NSNumber numberWithInt:newHeading]];
+    
+    if([queue count] > 10) [queue removeObjectAtIndex:0];
+    queuecount = [queue count];
+    
+    NSEnumerator *e = [queue objectEnumerator];
+    NSNumber *sum;
+    int oldd = 0 , newd, average =0;
+    BOOL firstLoop = YES;
+    while ((sum = [e nextObject]))
+    {
+        newd = [sum intValue];
+        if(firstLoop) {oldd = newd;firstLoop=NO;}
+        
+        if((newd +180) < oldd)
+        {
+            newd +=360; oldd = newd;
+            average = average + newd;
+            continue;
+        }
+        if((newd - 180) > oldd)
+        {
+            newd -=360;oldd = newd;
+            average = average + newd;
+            continue;
+        }
+        
+        average = average + newd;
+        oldd = newd;
+        
+    }
+    average = (average / queuecount) % 360;
+    
+    NSLog(@"%d",average);
+    [planeImage setTransform:CGAffineTransformMakeRotation((-1 * average * M_PI) /180)];
+
+}
+
 
 
 @end
