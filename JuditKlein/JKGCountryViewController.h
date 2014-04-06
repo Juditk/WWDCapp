@@ -10,6 +10,7 @@
 #import "JKGCountry.h"
 #import "JKGCountryDetailViewController.h"
 #import "JKGCountryProjectDetail.h"
+#import "JKGSecondScreenViewController.h"
 
 @interface JKGCountryViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {

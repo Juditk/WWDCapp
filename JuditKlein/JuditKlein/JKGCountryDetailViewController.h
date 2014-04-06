@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JKGCountryProjectDetail.h"
+#import "JKGSecondScreenViewController.h"
 
 @interface JKGCountryDetailViewController : UIViewController
 {

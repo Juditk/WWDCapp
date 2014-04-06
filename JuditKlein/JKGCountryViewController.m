@@ -34,7 +34,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated
-{
+{    
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:(222/255.0) green:(177/255.0) blue:(73/255.0) alpha:1]];
     //[[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
 }

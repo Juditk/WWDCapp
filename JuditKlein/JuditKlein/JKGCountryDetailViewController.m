@@ -40,6 +40,16 @@
     
     textView.text = contentString;
 
+    [[JKGSecondScreenViewController sharedManager]setImagePrefix:projectDetail.imagePrefix];
+    [[JKGSecondScreenViewController sharedManager]showSecondScreenContent];
+
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [[JKGSecondScreenViewController sharedManager]turnOffSecondScreen];
+    [[JKGSecondScreenViewController sharedManager]setImagePrefix:nil];
+
 }
 
 - (void)didReceiveMemoryWarning

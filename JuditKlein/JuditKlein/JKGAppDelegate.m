@@ -8,6 +8,7 @@
 
 #import "JKGAppDelegate.h"
 #import "JKGDatabase.h"
+#import "JKGSecondScreenViewController.h"
 
 @implementation JKGAppDelegate
 
@@ -15,6 +16,7 @@
 {
     // Override point for customization after application launch.
     [JKGDatabase sharedDatabase];
+    [JKGSecondScreenViewController sharedManager];
     return YES;
 }
 							

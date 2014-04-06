@@ -35,6 +35,16 @@
 		B2E9A30F18F0C87200B1EC87 /* SFO.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A30E18F0C87200B1EC87 /* SFO.plist */; };
 		B2E9A31118F0C8D400B1EC87 /* TXL.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A31018F0C8D400B1EC87 /* TXL.plist */; };
 		B2E9A31318F0C91800B1EC87 /* BUD.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A31218F0C91800B1EC87 /* BUD.plist */; };
+		B2E9A32218F1B44700B1EC87 /* JKGSecondScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A32018F1B44700B1EC87 /* JKGSecondScreenViewController.m */; };
+		B2E9A32318F1B44700B1EC87 /* JKGSecondScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32118F1B44700B1EC87 /* JKGSecondScreenViewController.xib */; };
+		B2E9A32E18F1B7B500B1EC87 /* bud01.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32618F1B7B500B1EC87 /* bud01.png */; };
+		B2E9A32F18F1B7B500B1EC87 /* bud02.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32718F1B7B500B1EC87 /* bud02.png */; };
+		B2E9A33018F1B7B500B1EC87 /* bud03.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32818F1B7B500B1EC87 /* bud03.png */; };
+		B2E9A33118F1B7B500B1EC87 /* bud04.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32918F1B7B500B1EC87 /* bud04.png */; };
+		B2E9A33218F1B7B500B1EC87 /* bud05.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32A18F1B7B500B1EC87 /* bud05.png */; };
+		B2E9A33318F1B7B500B1EC87 /* bud06.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32B18F1B7B500B1EC87 /* bud06.png */; };
+		B2E9A33418F1B7B500B1EC87 /* bud08.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32C18F1B7B500B1EC87 /* bud08.png */; };
+		B2E9A33518F1B7B500B1EC87 /* bud09.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32D18F1B7B500B1EC87 /* bud09.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +98,17 @@
 		B2E9A30E18F0C87200B1EC87 /* SFO.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFO.plist; sourceTree = "<group>"; };
 		B2E9A31018F0C8D400B1EC87 /* TXL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TXL.plist; sourceTree = "<group>"; };
 		B2E9A31218F0C91800B1EC87 /* BUD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BUD.plist; sourceTree = "<group>"; };
+		B2E9A31F18F1B44700B1EC87 /* JKGSecondScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKGSecondScreenViewController.h; path = ../JKGSecondScreenViewController.h; sourceTree = "<group>"; };
+		B2E9A32018F1B44700B1EC87 /* JKGSecondScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKGSecondScreenViewController.m; path = ../JKGSecondScreenViewController.m; sourceTree = "<group>"; };
+		B2E9A32118F1B44700B1EC87 /* JKGSecondScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JKGSecondScreenViewController.xib; path = ../JKGSecondScreenViewController.xib; sourceTree = "<group>"; };
+		B2E9A32618F1B7B500B1EC87 /* bud01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud01.png; sourceTree = "<group>"; };
+		B2E9A32718F1B7B500B1EC87 /* bud02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud02.png; sourceTree = "<group>"; };
+		B2E9A32818F1B7B500B1EC87 /* bud03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud03.png; sourceTree = "<group>"; };
+		B2E9A32918F1B7B500B1EC87 /* bud04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud04.png; sourceTree = "<group>"; };
+		B2E9A32A18F1B7B500B1EC87 /* bud05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud05.png; sourceTree = "<group>"; };
+		B2E9A32B18F1B7B500B1EC87 /* bud06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud06.png; sourceTree = "<group>"; };
+		B2E9A32C18F1B7B500B1EC87 /* bud08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud08.png; sourceTree = "<group>"; };
+		B2E9A32D18F1B7B500B1EC87 /* bud09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud09.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +168,7 @@
 		B2E9A2B018F07D3700B1EC87 /* JuditKlein */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A32518F1B76400B1EC87 /* In flight entertainment content */,
 				B2E9A31618F0E2D400B1EC87 /* App Delegate */,
 				B2E9A30118F0A79700B1EC87 /* Country Information */,
 				B2E9A2BC18F07D3700B1EC87 /* Main.storyboard */,
@@ -205,6 +227,7 @@
 		B2E9A2E018F07D6C00B1EC87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A32418F1B48A00B1EC87 /* Second Screen */,
 				B2E9A2EB18F07F8B00B1EC87 /* Safety Video */,
 			);
 			name = Views;
@@ -213,6 +236,7 @@
 		B2E9A2E118F07D7A00B1EC87 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A31718F1A94900B1EC87 /* Second Screen */,
 				B2E9A2F918F084C700B1EC87 /* Country Detali */,
 				B2E9A2F518F0805A00B1EC87 /* Countries */,
 				B2E9A2F118F07FD100B1EC87 /* Safety Video */,
@@ -336,6 +360,86 @@
 			name = "App Delegate";
 			sourceTree = "<group>";
 		};
+		B2E9A31718F1A94900B1EC87 /* Second Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A31F18F1B44700B1EC87 /* JKGSecondScreenViewController.h */,
+				B2E9A32018F1B44700B1EC87 /* JKGSecondScreenViewController.m */,
+			);
+			name = "Second Screen";
+			sourceTree = "<group>";
+		};
+		B2E9A32418F1B48A00B1EC87 /* Second Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A32118F1B44700B1EC87 /* JKGSecondScreenViewController.xib */,
+			);
+			name = "Second Screen";
+			sourceTree = "<group>";
+		};
+		B2E9A32518F1B76400B1EC87 /* In flight entertainment content */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A33B18F1EF3C00B1EC87 /* TXL */,
+				B2E9A33A18F1EF1500B1EC87 /* AKL */,
+				B2E9A33918F1EF1100B1EC87 /* MEL */,
+				B2E9A33818F1EEFD00B1EC87 /* TVU */,
+				B2E9A33718F1EEF600B1EC87 /* SFO */,
+				B2E9A33618F1B7BE00B1EC87 /* BUD */,
+			);
+			name = "In flight entertainment content";
+			sourceTree = "<group>";
+		};
+		B2E9A33618F1B7BE00B1EC87 /* BUD */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A32618F1B7B500B1EC87 /* bud01.png */,
+				B2E9A32718F1B7B500B1EC87 /* bud02.png */,
+				B2E9A32818F1B7B500B1EC87 /* bud03.png */,
+				B2E9A32918F1B7B500B1EC87 /* bud04.png */,
+				B2E9A32A18F1B7B500B1EC87 /* bud05.png */,
+				B2E9A32B18F1B7B500B1EC87 /* bud06.png */,
+				B2E9A32C18F1B7B500B1EC87 /* bud08.png */,
+				B2E9A32D18F1B7B500B1EC87 /* bud09.png */,
+			);
+			name = BUD;
+			sourceTree = "<group>";
+		};
+		B2E9A33718F1EEF600B1EC87 /* SFO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SFO;
+			sourceTree = "<group>";
+		};
+		B2E9A33818F1EEFD00B1EC87 /* TVU */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TVU;
+			sourceTree = "<group>";
+		};
+		B2E9A33918F1EF1100B1EC87 /* MEL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MEL;
+			sourceTree = "<group>";
+		};
+		B2E9A33A18F1EF1500B1EC87 /* AKL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AKL;
+			sourceTree = "<group>";
+		};
+		B2E9A33B18F1EF3C00B1EC87 /* TXL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TXL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -415,14 +519,23 @@
 			files = (
 				B2E9A31318F0C91800B1EC87 /* BUD.plist in Resources */,
 				B2E9A30D18F0C76300B1EC87 /* MEL.plist in Resources */,
+				B2E9A32318F1B44700B1EC87 /* JKGSecondScreenViewController.xib in Resources */,
 				B2E9A2C318F07D3700B1EC87 /* Images.xcassets in Resources */,
 				B2E9A2B518F07D3700B1EC87 /* InfoPlist.strings in Resources */,
 				B2E9A30F18F0C87200B1EC87 /* SFO.plist in Resources */,
 				B2E9A31118F0C8D400B1EC87 /* TXL.plist in Resources */,
+				B2E9A32F18F1B7B500B1EC87 /* bud02.png in Resources */,
+				B2E9A33018F1B7B500B1EC87 /* bud03.png in Resources */,
 				B2E9A2F018F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib in Resources */,
+				B2E9A32E18F1B7B500B1EC87 /* bud01.png in Resources */,
+				B2E9A33418F1B7B500B1EC87 /* bud08.png in Resources */,
 				B2E9A2BE18F07D3700B1EC87 /* Main.storyboard in Resources */,
+				B2E9A33518F1B7B500B1EC87 /* bud09.png in Resources */,
+				B2E9A33318F1B7B500B1EC87 /* bud06.png in Resources */,
+				B2E9A33218F1B7B500B1EC87 /* bud05.png in Resources */,
 				B2E9A30B18F0C70000B1EC87 /* TVU.plist in Resources */,
 				B2E9A30918F0A7F500B1EC87 /* AKL.plist in Resources */,
+				B2E9A33118F1B7B500B1EC87 /* bud04.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +558,7 @@
 				B2E9A30018F0A5B800B1EC87 /* JKGDatabase.m in Sources */,
 				B2E9A2E718F07E0200B1EC87 /* JKGCountry.m in Sources */,
 				B2E9A2B718F07D3700B1EC87 /* main.m in Sources */,
+				B2E9A32218F1B44700B1EC87 /* JKGSecondScreenViewController.m in Sources */,
 				B2E9A2F818F0836F00B1EC87 /* JKGCountryDetailViewController.m in Sources */,
 				B2E9A2EA18F07EB800B1EC87 /* JKGCountryProjectDetail.m in Sources */,
 				B2E9A2F418F0805300B1EC87 /* JKGCountryViewController.m in Sources */,
