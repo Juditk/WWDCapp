@@ -11,9 +11,11 @@
 @interface JKGDatabase : NSObject
 {
     NSDictionary *countriesList;
+    NSMutableDictionary *countriesVisited;
 }
 
 @property (nonatomic, strong) NSDictionary *countriesList;
+@property (nonatomic, strong) NSMutableDictionary *countriesVisited;
 
 + (JKGDatabase *) sharedDatabase;
 - (NSDictionary*)loadCountryWithShortName:(NSString*)countryShortName;

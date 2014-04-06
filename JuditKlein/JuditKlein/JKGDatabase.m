@@ -10,7 +10,7 @@
 
 @implementation JKGDatabase
 
-@synthesize countriesList;
+@synthesize countriesList, countriesVisited;
 
 + (JKGDatabase *) sharedDatabase
 {
@@ -26,7 +26,14 @@
 {
     self = [super init];
     if (self) {
-        
+        countriesVisited = [[NSMutableDictionary alloc]initWithObjectsAndKeys:
+                            @"AKL",@NO,
+                            @"TVU", @NO,
+                            @"SFO", @NO,
+                            @"TXL", @NO,
+                            @"BUD", @NO,
+                            @"MEL", @NO,
+                            nil];
     }
     return self;
 }

@@ -19,22 +19,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     backgroundImage.image = [UIImage imageNamed:@"homescreenbg"];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-
+    
     planeImage.image = [UIImage imageNamed:@"plane"];
-    [goToTXL setImage:[UIImage imageNamed:@"txl"] forState:UIControlStateNormal];
-    [goToTVU setImage:[UIImage imageNamed:@"tvu"] forState:UIControlStateNormal];
-    [goToSFO setImage:[UIImage imageNamed:@"sfo"] forState:UIControlStateNormal];
-    [goToMEL setImage:[UIImage imageNamed:@"mel"] forState:UIControlStateNormal];
-    [goToBUD setImage:[UIImage imageNamed:@"bud"] forState:UIControlStateNormal];
-    [goToAKL setImage:[UIImage imageNamed:@"akl"] forState:UIControlStateNormal];
+    
+    [self setImageStates];
+
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     [super viewWillAppear:animated];
+    [self setImageStates];
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,6 +46,7 @@
 {
     NSLog(@"Let's go to Hungary!");
     countryCode = @"BUD";
+    [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
     [self performSegueWithIdentifier:@"goto" sender:sender];
 }
 
@@ -54,6 +54,7 @@
 {
     NSLog(@"Let's go to Germany!");
     countryCode = @"TXL";
+    [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
     [self performSegueWithIdentifier:@"goto" sender:sender];
 
 }
@@ -62,6 +63,7 @@
 {
     NSLog(@"Let's go to New Zealand!");
     countryCode = @"AKL";
+    [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
     [self performSegueWithIdentifier:@"goto" sender:sender];
     
 }
@@ -70,6 +72,7 @@
 {
     NSLog(@"Let's go to Australia!");
     countryCode = @"MEL";
+    [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
     [self performSegueWithIdentifier:@"goto" sender:sender];
     
 }
@@ -78,6 +81,7 @@
 {
     NSLog(@"Let's go to USA!");
     countryCode = @"SFO";
+    [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
     [self performSegueWithIdentifier:@"goto" sender:sender];
     
 }
@@ -86,6 +90,7 @@
 {
     NSLog(@"Let's go to Fiji!");
     countryCode = @"TVU";
+    [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
     [self performSegueWithIdentifier:@"goto" sender:sender];
     
 }
@@ -103,10 +108,42 @@
         [countryViewController setCountry:country];
         [countryViewController setCountryName:country.countryName];
     }
-    
-    
 }
 
+- (IBAction)infoButtonTapped:(id)sender
+{
+    NSLog(@"Info Button Tapped");
+}
+
+- (UIImage*)getButtonStateForCountry: (NSString*)countryCodeToCheck
+{
+    if ( ![[[JKGDatabase sharedDatabase]countriesVisited]objectForKey:countryCodeToCheck] ) {
+        return [UIImage imageNamed:countryCodeToCheck];
+    } else {
+        return [UIImage imageNamed:[NSString stringWithFormat:@"%@stamp",countryCodeToCheck]];
+    }
+}
+
+- (void)setImageStates
+{
+    [goToTVU.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [goToTVU setImage:[self getButtonStateForCountry:@"TVU"] forState:UIControlStateNormal];
+    
+    [goToBUD.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [goToBUD setImage:[self getButtonStateForCountry:@"BUD"] forState:UIControlStateNormal];
+    
+    [goToSFO.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [goToSFO setImage:[self getButtonStateForCountry:@"SFO"] forState:UIControlStateNormal];
+    
+    [goToTXL.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [goToTXL setImage:[self getButtonStateForCountry:@"TXL"] forState:UIControlStateNormal];
+    
+    [goToAKL.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [goToAKL setImage:[self getButtonStateForCountry:@"AKL"] forState:UIControlStateNormal];
+    
+    [goToMEL.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [goToMEL setImage:[self getButtonStateForCountry:@"MEL"] forState:UIControlStateNormal];
+}
 
 
 @end

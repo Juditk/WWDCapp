@@ -40,6 +40,7 @@
 - (IBAction)destinationMEL:(id)sender;
 - (IBAction)destinationSFO:(id)sender;
 - (IBAction)destinationTVU:(id)sender;
+- (IBAction)infoButtonTapped:(id)sender;
 
 
 @end
