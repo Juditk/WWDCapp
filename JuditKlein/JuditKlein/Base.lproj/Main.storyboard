@@ -30,13 +30,112 @@
                     <view key="view" contentMode="scaleToFill" id="su3-IJ-CIa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-YQ-9n0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmr-S0-3Nc">
+                                <rect key="frame" x="94" y="525" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip safety briefing">
+                                    <color key="titleColor" red="0.87058823529999996" green="0.69411764710000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipSafeyBriefing:" destination="skT-XB-ZHx" eventType="touchUpInside" id="ehm-cp-1CM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6iM-of-WXS"/>
+                    <connections>
+                        <outlet property="currentImage" destination="aPC-YQ-9n0" id="scL-UY-qEQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIX-TF-sbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="787" y="-1193"/>
+            <point key="canvasLocation" x="649" y="-1041"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="XwS-vc-t5K">
+            <objects>
+                <viewController id="1Tc-yA-Ov8" customClass="JKGInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ox-Pg-kJM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ud2-m4-zcn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DoA-3L-DvS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infoBackground" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-sO-ZF1">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czX-tx-JJM">
+                                <rect key="frame" x="142" y="518" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.87058823529999996" green="0.69411764710000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButton:" destination="1Tc-yA-Ov8" eventType="touchUpInside" id="uNO-dK-Rzd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fz-UZ-Kzx">
+                                <rect key="frame" x="20" y="20" width="280" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-wn-mBc">
+                                <rect key="frame" x="20" y="77" width="280" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">My name is Judit Klein.
+I am a notorious traveller currently living in Auckland, New Zealand 
+
+That's what this app represents: my passions, my hobby, my work, my research, all intertwined by my love of travel and the places I've had the opportunity to visit.
+
+To me, that is what WWDC is about - bringing together developers from around the world into one place so share those experiences and passions. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons1" translatesAutoresizingMaskIntoConstraints="NO" id="IKz-QW-kYz">
+                                <rect key="frame" x="41" y="370" width="49" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+6421 113 6935" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhT-IV-CSc">
+                                <rect key="frame" x="98" y="382" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jklein@aut.ac.nz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVi-19-Lr9">
+                                <rect key="frame" x="98" y="424" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@juditk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9K2-8Z-nLr">
+                                <rect key="frame" x="98" y="466" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="mWy-sO-ZF1" id="h3e-FI-cAy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMR-nw-3Uz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="398"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6Vw-HW-vY7">
@@ -131,6 +230,9 @@
                                 <state key="normal" image="infoButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="infoButtonTapped:" destination="Yyd-as-VEp" eventType="touchUpInside" id="4Wd-K7-mAU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -152,7 +254,8 @@
                         <outlet property="planeImage" destination="WQb-gN-ZOM" id="rQE-6S-Qu2"/>
                         <outlet property="view" destination="aEA-d9-MBw" id="9Yd-Uy-ZcB"/>
                         <segue destination="w5O-uf-9cp" kind="push" identifier="goto" id="0fq-fg-KMs"/>
-                        <segue destination="skT-XB-ZHx" kind="modal" id="kWZ-8A-Zhy"/>
+                        <segue destination="skT-XB-ZHx" kind="modal" identifier="safetyVideo" id="kWZ-8A-Zhy"/>
+                        <segue destination="1Tc-yA-Ov8" kind="modal" identifier="infoScreen" id="rHq-uM-iYm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfY-xM-xeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -251,6 +354,8 @@
     </scenes>
     <resources>
         <image name="airplayIcon" width="26" height="22"/>
+        <image name="icons1" width="49" height="130"/>
+        <image name="infoBackground" width="320" height="567"/>
         <image name="infoButton" width="44" height="45"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

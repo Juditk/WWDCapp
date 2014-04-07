@@ -12,10 +12,12 @@
 {
     NSDictionary *countriesList;
     NSMutableDictionary *countriesVisited;
+    BOOL hasPlayedSafeyVideo;
 }
 
 @property (nonatomic, strong) NSDictionary *countriesList;
 @property (nonatomic, strong) NSMutableDictionary *countriesVisited;
+@property (nonatomic) BOOL hasPlayedSafetyVideo;
 
 + (JKGDatabase *) sharedDatabase;
 - (NSDictionary*)loadCountryWithShortName:(NSString*)countryShortName;

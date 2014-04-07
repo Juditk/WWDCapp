@@ -25,9 +25,13 @@
     
     planeImage.image = [UIImage imageNamed:@"plane"];
     queue = [[NSMutableArray alloc]init];
-    
-    [self setImageStates];
 
+    [self setImageStates];
+    
+    if ( ![[JKGDatabase sharedDatabase]hasPlayedSafetyVideo]) {
+        [self performSegueWithIdentifier:@"safetyVideo" sender:self];
+        [[JKGDatabase sharedDatabase]setHasPlayedSafetyVideo:YES];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -118,6 +122,8 @@
                      completion:^(BOOL finished) {
                          [self performSegueWithIdentifier:@"goto" sender:sender];
                      }];
+    
+    
 }
 
 - (IBAction)destinationSFO:(id)sender
@@ -160,22 +166,28 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    JKGCountryViewController *countryViewController = segue.destinationViewController;
-    
-    NSDictionary *countryInformation = [[JKGDatabase sharedDatabase]loadCountryWithShortName:countryCode];
-    NSLog(@"I have the following information for this country: %@",countryInformation);
-    
-    if ( countryInformation ) {
-        JKGCountry *country = [[JKGCountry alloc]initWithCountryDictionary:countryInformation];
-        NSLog(@"%@",country);
-        [countryViewController setCountry:country];
-        [countryViewController setCountryName:country.countryName];
+    if ( [segue.identifier isEqualToString:@"goto"] ) {
+        
+        JKGCountryViewController *countryViewController = segue.destinationViewController;
+        
+        NSDictionary *countryInformation = [[JKGDatabase sharedDatabase]loadCountryWithShortName:countryCode];
+        NSLog(@"I have the following information for this country: %@",countryInformation);
+        
+        if ( countryInformation ) {
+            JKGCountry *country = [[JKGCountry alloc]initWithCountryDictionary:countryInformation];
+            NSLog(@"%@",country);
+            [countryViewController setCountry:country];
+            [countryViewController setCountryName:country.countryName];
+        }
     }
 }
 
 - (IBAction)infoButtonTapped:(id)sender
 {
     NSLog(@"Info Button Tapped");
+    [self performSegueWithIdentifier:@"infoScreen" sender:self];
+
+    
 }
 
 - (UIImage*)getButtonStateForCountry: (NSString*)countryCodeToCheck

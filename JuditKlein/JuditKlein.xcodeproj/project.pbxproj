@@ -47,6 +47,9 @@
 		B2E9A33518F1B7B500B1EC87 /* bud09.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A32D18F1B7B500B1EC87 /* bud09.png */; };
 		B2E9A33D18F1F27E00B1EC87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A33C18F1F27E00B1EC87 /* QuartzCore.framework */; };
 		B2E9A33F18F1F28500B1EC87 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A33E18F1F28500B1EC87 /* CoreLocation.framework */; };
+		B2E9A34118F2220900B1EC87 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A34018F2220900B1EC87 /* AVFoundation.framework */; };
+		B2E9A34318F2258200B1EC87 /* speechCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A34218F2258200B1EC87 /* speechCommands.plist */; };
+		B2E9A34718F22A3D00B1EC87 /* JKGInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A34618F22A3D00B1EC87 /* JKGInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,10 @@
 		B2E9A32D18F1B7B500B1EC87 /* bud09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bud09.png; sourceTree = "<group>"; };
 		B2E9A33C18F1F27E00B1EC87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B2E9A33E18F1F28500B1EC87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B2E9A34018F2220900B1EC87 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B2E9A34218F2258200B1EC87 /* speechCommands.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = speechCommands.plist; sourceTree = "<group>"; };
+		B2E9A34518F22A3D00B1EC87 /* JKGInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKGInfoViewController.h; sourceTree = "<group>"; };
+		B2E9A34618F22A3D00B1EC87 /* JKGInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKGInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E9A34118F2220900B1EC87 /* AVFoundation.framework in Frameworks */,
 				B2E9A33F18F1F28500B1EC87 /* CoreLocation.framework in Frameworks */,
 				B2E9A33D18F1F27E00B1EC87 /* QuartzCore.framework in Frameworks */,
 				B2E9A2AD18F07D3700B1EC87 /* CoreGraphics.framework in Frameworks */,
@@ -163,6 +171,7 @@
 		B2E9A2A918F07D3700B1EC87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A34018F2220900B1EC87 /* AVFoundation.framework */,
 				B2E9A33E18F1F28500B1EC87 /* CoreLocation.framework */,
 				B2E9A33C18F1F27E00B1EC87 /* QuartzCore.framework */,
 				B2E9A2AA18F07D3700B1EC87 /* Foundation.framework */,
@@ -244,6 +253,7 @@
 		B2E9A2E118F07D7A00B1EC87 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A34418F22A2500B1EC87 /* More information */,
 				B2E9A31718F1A94900B1EC87 /* Second Screen */,
 				B2E9A2F918F084C700B1EC87 /* Country Detali */,
 				B2E9A2F518F0805A00B1EC87 /* Countries */,
@@ -265,6 +275,7 @@
 		B2E9A2F118F07FD100B1EC87 /* Safety Video */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A34218F2258200B1EC87 /* speechCommands.plist */,
 				B2E9A2EC18F07FCC00B1EC87 /* JKGSafetyVideoViewController.h */,
 				B2E9A2ED18F07FCC00B1EC87 /* JKGSafetyVideoViewController.m */,
 			);
@@ -448,6 +459,15 @@
 			name = TXL;
 			sourceTree = "<group>";
 		};
+		B2E9A34418F22A2500B1EC87 /* More information */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A34518F22A3D00B1EC87 /* JKGInfoViewController.h */,
+				B2E9A34618F22A3D00B1EC87 /* JKGInfoViewController.m */,
+			);
+			name = "More information";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -525,6 +545,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E9A34318F2258200B1EC87 /* speechCommands.plist in Resources */,
 				B2E9A31318F0C91800B1EC87 /* BUD.plist in Resources */,
 				B2E9A30D18F0C76300B1EC87 /* MEL.plist in Resources */,
 				B2E9A32318F1B44700B1EC87 /* JKGSecondScreenViewController.xib in Resources */,
@@ -563,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E9A2EF18F07FCC00B1EC87 /* JKGSafetyVideoViewController.m in Sources */,
+				B2E9A34718F22A3D00B1EC87 /* JKGInfoViewController.m in Sources */,
 				B2E9A30018F0A5B800B1EC87 /* JKGDatabase.m in Sources */,
 				B2E9A2E718F07E0200B1EC87 /* JKGCountry.m in Sources */,
 				B2E9A2B718F07D3700B1EC87 /* main.m in Sources */,

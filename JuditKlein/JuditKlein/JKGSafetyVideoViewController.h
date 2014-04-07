@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface JKGSafetyVideoViewController : UIViewController
+@interface JKGSafetyVideoViewController : UIViewController <AVSpeechSynthesizerDelegate>
+{
+    UIImageView *currentImage;
+    AVSpeechSynthesizer *synthesizer;
+    NSArray *speechStrings;
+    int currentSpeechItem;
+    
+}
+
+@property (nonatomic, strong) IBOutlet UIImageView *currentImage;
+@property (nonatomic, strong) AVSpeechSynthesizer *synthesizer;
+
+- (IBAction)skipSafeyBriefing:(id)sender;
 
 @end
