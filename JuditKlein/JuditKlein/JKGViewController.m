@@ -37,7 +37,11 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-    [self setUpLocation];
+    
+    if ( [CLLocationManager headingAvailable]) {
+        [self setUpLocation];
+    }
+    
     [self setImageStates];
 }
 
@@ -273,6 +277,11 @@
     NSLog(@"%d",average);
     [planeImage setTransform:CGAffineTransformMakeRotation((-1 * average * M_PI) /180)];
 
+}
+
+- (IBAction)replayBriefing:(id)sender
+{
+    [self performSegueWithIdentifier:@"safetyVideo" sender:self];
 }
 
 

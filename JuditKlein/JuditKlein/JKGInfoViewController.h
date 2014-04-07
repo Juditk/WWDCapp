@@ -16,6 +16,5 @@
 @property (nonatomic, retain) IBOutlet UIImageView *backgroundImage;
 
 - (IBAction)doneButton:(id)sender;
-- (IBAction)rewatchBriefing:(id)sender;
 
 @end

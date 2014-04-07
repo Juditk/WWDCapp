@@ -46,6 +46,7 @@
 - (IBAction)destinationSFO:(id)sender;
 - (IBAction)destinationTVU:(id)sender;
 - (IBAction)infoButtonTapped:(id)sender;
+- (IBAction)replayBriefing:(id)sender;
 
 
 @end

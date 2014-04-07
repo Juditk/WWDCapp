@@ -18,11 +18,15 @@
     JKGCountry *country;
     NSString *countryName;
     UITableView *tableView;
+    UIButton *passbookLocalButton;
     
 }
 @property (nonatomic, strong) JKGCountry *country;
 @property (nonatomic, strong) NSString *countryName;
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet UIButton *passbookLocalButton;
+
+- (IBAction)showPass:(id)sender;
 
 @end

@@ -44,9 +44,5 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)rewatchBriefing:(id)sender
-{
-    
-}
 
 @end

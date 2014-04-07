@@ -14,7 +14,7 @@
 
 @implementation JKGCountryViewController
 
-@synthesize backgroundImage,country, tableView, countryName;
+@synthesize backgroundImage,country, tableView, countryName, passbookLocalButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,9 +28,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    backgroundImage.image = [UIImage imageNamed:@"bgcolour"];
+    backgroundImage.image = [UIImage imageNamed:@"infoBackground"];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.navigationItem.title = countryName;
+    
+    if ( [countryName isEqualToString:@"Germany"] | [countryName isEqualToString:@"Hungary"] ) {
+        [passbookLocalButton setImage:[UIImage imageNamed:countryName] forState:UIControlStateNormal];
+    } else {
+        [passbookLocalButton setImage:[UIImage imageNamed:@"passbooken"] forState:UIControlStateNormal];
+    }
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -94,8 +101,13 @@
     JKGCountryProjectDetail *projDetail = [[country countryProjects]objectAtIndex:myIndexPath.row];
     [countryDetailViewController setProjectDetail:projDetail];
     
+}
 
+#pragma mark Passbook
 
+- (IBAction)showPass:(id)sender
+{
+    NSLog(@"Issue boarding pass for %@",countryName);
 }
 
 @end
