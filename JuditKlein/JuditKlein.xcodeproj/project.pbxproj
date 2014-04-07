@@ -50,6 +50,13 @@
 		B2E9A34118F2220900B1EC87 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A34018F2220900B1EC87 /* AVFoundation.framework */; };
 		B2E9A34318F2258200B1EC87 /* speechCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A34218F2258200B1EC87 /* speechCommands.plist */; };
 		B2E9A34718F22A3D00B1EC87 /* JKGInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A34618F22A3D00B1EC87 /* JKGInfoViewController.m */; };
+		B2E9A35018F2779D00B1EC87 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A34F18F2779D00B1EC87 /* PassKit.framework */; };
+		B2E9A36718F27E3500B1EC87 /* Australia.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36118F27E3500B1EC87 /* Australia.pkpass */; };
+		B2E9A36818F27E3500B1EC87 /* Fiji.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36218F27E3500B1EC87 /* Fiji.pkpass */; };
+		B2E9A36918F27E3500B1EC87 /* Germany.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36318F27E3500B1EC87 /* Germany.pkpass */; };
+		B2E9A36A18F27E3500B1EC87 /* Hungary.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36418F27E3500B1EC87 /* Hungary.pkpass */; };
+		B2E9A36B18F27E3500B1EC87 /* New Zealand.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36518F27E3500B1EC87 /* New Zealand.pkpass */; };
+		B2E9A36C18F27E3500B1EC87 /* USA.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36618F27E3500B1EC87 /* USA.pkpass */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +127,13 @@
 		B2E9A34218F2258200B1EC87 /* speechCommands.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = speechCommands.plist; sourceTree = "<group>"; };
 		B2E9A34518F22A3D00B1EC87 /* JKGInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKGInfoViewController.h; sourceTree = "<group>"; };
 		B2E9A34618F22A3D00B1EC87 /* JKGInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKGInfoViewController.m; sourceTree = "<group>"; };
+		B2E9A34F18F2779D00B1EC87 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		B2E9A36118F27E3500B1EC87 /* Australia.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Australia.pkpass; sourceTree = "<group>"; };
+		B2E9A36218F27E3500B1EC87 /* Fiji.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fiji.pkpass; sourceTree = "<group>"; };
+		B2E9A36318F27E3500B1EC87 /* Germany.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Germany.pkpass; sourceTree = "<group>"; };
+		B2E9A36418F27E3500B1EC87 /* Hungary.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hungary.pkpass; sourceTree = "<group>"; };
+		B2E9A36518F27E3500B1EC87 /* New Zealand.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Zealand.pkpass"; sourceTree = "<group>"; };
+		B2E9A36618F27E3500B1EC87 /* USA.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = USA.pkpass; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E9A35018F2779D00B1EC87 /* PassKit.framework in Frameworks */,
 				B2E9A34118F2220900B1EC87 /* AVFoundation.framework in Frameworks */,
 				B2E9A33F18F1F28500B1EC87 /* CoreLocation.framework in Frameworks */,
 				B2E9A33D18F1F27E00B1EC87 /* QuartzCore.framework in Frameworks */,
@@ -171,6 +186,7 @@
 		B2E9A2A918F07D3700B1EC87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A34F18F2779D00B1EC87 /* PassKit.framework */,
 				B2E9A34018F2220900B1EC87 /* AVFoundation.framework */,
 				B2E9A33E18F1F28500B1EC87 /* CoreLocation.framework */,
 				B2E9A33C18F1F27E00B1EC87 /* QuartzCore.framework */,
@@ -185,6 +201,7 @@
 		B2E9A2B018F07D3700B1EC87 /* JuditKlein */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9A34818F2772B00B1EC87 /* Passbook passes */,
 				B2E9A32518F1B76400B1EC87 /* In flight entertainment content */,
 				B2E9A31618F0E2D400B1EC87 /* App Delegate */,
 				B2E9A30118F0A79700B1EC87 /* Country Information */,
@@ -468,6 +485,19 @@
 			name = "More information";
 			sourceTree = "<group>";
 		};
+		B2E9A34818F2772B00B1EC87 /* Passbook passes */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9A36118F27E3500B1EC87 /* Australia.pkpass */,
+				B2E9A36218F27E3500B1EC87 /* Fiji.pkpass */,
+				B2E9A36318F27E3500B1EC87 /* Germany.pkpass */,
+				B2E9A36418F27E3500B1EC87 /* Hungary.pkpass */,
+				B2E9A36518F27E3500B1EC87 /* New Zealand.pkpass */,
+				B2E9A36618F27E3500B1EC87 /* USA.pkpass */,
+			);
+			name = "Passbook passes";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -549,16 +579,22 @@
 				B2E9A31318F0C91800B1EC87 /* BUD.plist in Resources */,
 				B2E9A30D18F0C76300B1EC87 /* MEL.plist in Resources */,
 				B2E9A32318F1B44700B1EC87 /* JKGSecondScreenViewController.xib in Resources */,
+				B2E9A36A18F27E3500B1EC87 /* Hungary.pkpass in Resources */,
 				B2E9A2C318F07D3700B1EC87 /* Images.xcassets in Resources */,
+				B2E9A36B18F27E3500B1EC87 /* New Zealand.pkpass in Resources */,
 				B2E9A2B518F07D3700B1EC87 /* InfoPlist.strings in Resources */,
 				B2E9A30F18F0C87200B1EC87 /* SFO.plist in Resources */,
 				B2E9A31118F0C8D400B1EC87 /* TXL.plist in Resources */,
 				B2E9A32F18F1B7B500B1EC87 /* bud02.png in Resources */,
+				B2E9A36918F27E3500B1EC87 /* Germany.pkpass in Resources */,
 				B2E9A33018F1B7B500B1EC87 /* bud03.png in Resources */,
+				B2E9A36718F27E3500B1EC87 /* Australia.pkpass in Resources */,
 				B2E9A2F018F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib in Resources */,
 				B2E9A32E18F1B7B500B1EC87 /* bud01.png in Resources */,
 				B2E9A33418F1B7B500B1EC87 /* bud08.png in Resources */,
+				B2E9A36C18F27E3500B1EC87 /* USA.pkpass in Resources */,
 				B2E9A2BE18F07D3700B1EC87 /* Main.storyboard in Resources */,
+				B2E9A36818F27E3500B1EC87 /* Fiji.pkpass in Resources */,
 				B2E9A33518F1B7B500B1EC87 /* bud09.png in Resources */,
 				B2E9A33318F1B7B500B1EC87 /* bud06.png in Resources */,
 				B2E9A33218F1B7B500B1EC87 /* bud05.png in Resources */,

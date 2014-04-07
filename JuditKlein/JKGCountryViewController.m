@@ -108,6 +108,17 @@
 - (IBAction)showPass:(id)sender
 {
     NSLog(@"Issue boarding pass for %@",countryName);
+    NSString *passFileName = [[NSBundle mainBundle] pathForResource:countryName ofType:@"pkpass"];
+    NSData *passData = [NSData dataWithContentsOfFile:passFileName];
+    PKPass *pass = [[PKPass alloc]initWithData:passData error:nil];
+    
+    PKAddPassesViewController *addPassVC = [[PKAddPassesViewController alloc]initWithPass:pass];
+    [self presentViewController:addPassVC animated:YES completion:nil];
+}
+
+-(void)addPassesViewControllerDidFinish:(PKAddPassesViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

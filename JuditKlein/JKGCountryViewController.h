@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <PassKit/PassKit.h>
 #import "JKGCountry.h"
 #import "JKGCountryDetailViewController.h"
 #import "JKGCountryProjectDetail.h"
 #import "JKGSecondScreenViewController.h"
 
-@interface JKGCountryViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface JKGCountryViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, PKAddPassesViewControllerDelegate>
 {
     UIImageView *backgroundImage;
     JKGCountry *country;
