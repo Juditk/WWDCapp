@@ -25,7 +25,6 @@
 		B2E9A2E718F07E0200B1EC87 /* JKGCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2E618F07E0200B1EC87 /* JKGCountry.m */; };
 		B2E9A2EA18F07EB800B1EC87 /* JKGCountryProjectDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2E918F07EB800B1EC87 /* JKGCountryProjectDetail.m */; };
 		B2E9A2EF18F07FCC00B1EC87 /* JKGSafetyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2ED18F07FCC00B1EC87 /* JKGSafetyVideoViewController.m */; };
-		B2E9A2F018F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A2EE18F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib */; };
 		B2E9A2F418F0805300B1EC87 /* JKGCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2F318F0805300B1EC87 /* JKGCountryViewController.m */; };
 		B2E9A2F818F0836F00B1EC87 /* JKGCountryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2F718F0836F00B1EC87 /* JKGCountryDetailViewController.m */; };
 		B2E9A30018F0A5B800B1EC87 /* JKGDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2FF18F0A5B800B1EC87 /* JKGDatabase.m */; };
@@ -97,7 +96,6 @@
 		B2E9A2E918F07EB800B1EC87 /* JKGCountryProjectDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKGCountryProjectDetail.m; sourceTree = "<group>"; };
 		B2E9A2EC18F07FCC00B1EC87 /* JKGSafetyVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKGSafetyVideoViewController.h; sourceTree = "<group>"; };
 		B2E9A2ED18F07FCC00B1EC87 /* JKGSafetyVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKGSafetyVideoViewController.m; sourceTree = "<group>"; };
-		B2E9A2EE18F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKGSafetyVideoViewController.xib; sourceTree = "<group>"; };
 		B2E9A2F218F0805300B1EC87 /* JKGCountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKGCountryViewController.h; path = ../JKGCountryViewController.h; sourceTree = "<group>"; };
 		B2E9A2F318F0805300B1EC87 /* JKGCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKGCountryViewController.m; path = ../JKGCountryViewController.m; sourceTree = "<group>"; };
 		B2E9A2F618F0836F00B1EC87 /* JKGCountryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKGCountryDetailViewController.h; sourceTree = "<group>"; };
@@ -284,7 +282,6 @@
 		B2E9A2EB18F07F8B00B1EC87 /* Safety Video */ = {
 			isa = PBXGroup;
 			children = (
-				B2E9A2EE18F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib */,
 			);
 			name = "Safety Video";
 			sourceTree = "<group>";
@@ -589,7 +586,6 @@
 				B2E9A36918F27E3500B1EC87 /* Germany.pkpass in Resources */,
 				B2E9A33018F1B7B500B1EC87 /* bud03.png in Resources */,
 				B2E9A36718F27E3500B1EC87 /* Australia.pkpass in Resources */,
-				B2E9A2F018F07FCC00B1EC87 /* JKGSafetyVideoViewController.xib in Resources */,
 				B2E9A32E18F1B7B500B1EC87 /* bud01.png in Resources */,
 				B2E9A33418F1B7B500B1EC87 /* bud08.png in Resources */,
 				B2E9A36C18F27E3500B1EC87 /* USA.pkpass in Resources */,

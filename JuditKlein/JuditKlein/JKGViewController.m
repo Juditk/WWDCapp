@@ -274,7 +274,6 @@
     }
     average = (average / queuecount) % 360;
     
-    NSLog(@"%d",average);
     [planeImage setTransform:CGAffineTransformMakeRotation((-1 * average * M_PI) /180)];
 
 }

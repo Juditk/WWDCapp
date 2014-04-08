@@ -6,12 +6,12 @@
 	<string>Before we take off, make sure your objects are stowed away in a safe array that will not be released. Those using arc may want to keep an eye on their objects at all times.</string>
 	<string>Keep an eye on the lighted signs and don’t ignore any warnings.</string>
 	<string>Ensure your LLDB session is firmly connected in case of any unexpected breakpoints.</string>
-	<string>If extra memory is deployed, please ensure you have adequate supply before helping any subclasses.</string>
+	<string>If extra memory is deployed, please ensure you have adequate supply before helping any sub classes.</string>
 	<string>If an emergency should occur during take off or landing, adopt the recommended brace position.</string>
-	<string>Federal regulations prevent auto release on any ARC operated flights.</string>
-	<string>Emergency Releases are located here and here, it is a good idea to count the number of rows between you and your nearest release.</string>
+	<string>Federal regulations prohibits auto release on any ARC operated flights.</string>
+	<string>Your crew are now pointing out Emergency Releases. Count the number of rows between you and your nearest release.</string>
 	<string>In the event that our pool is drained, defaults will be distributed to save your state.</string>
-	<string>So now in preparation for take off, please pause all dispatch queues, we&apos;ll let you know when you when it&apos;s okay to resume them. Smaller queues may be running at all times. </string>
-	<string>Thank you and enjoy the journey and feel free to enjoy the in flight entertainment by connecting to an external display.</string>
+	<string>So now in preparation for take off, please pause all dispatch queues, we&apos;ll let you know when it&apos;s safe to resume them. Smaller queues may be running at all times. </string>
+	<string>Thank you and enjoy your journey and feel free to connect to the in flight entertainment by connecting to an external display.</string>
 </array>
 </plist>
