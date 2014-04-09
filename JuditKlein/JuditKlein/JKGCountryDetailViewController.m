@@ -49,6 +49,7 @@
 {
     [[JKGSecondScreenViewController sharedManager]turnOffSecondScreen];
     [[JKGSecondScreenViewController sharedManager]setImagePrefix:nil];
+    [[JKGSecondScreenViewController sharedManager]setCurrentImageIndex:0];
 
 }
 

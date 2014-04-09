@@ -218,14 +218,14 @@ To me, that is what WWDC is about - bringing together developers from around the
                                 <rect key="frame" x="120" y="227" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap on an airport to take off." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-gj-mbf">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap on an airport to take off." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-gj-mbf">
                                 <rect key="frame" x="75" y="527" width="173" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.87058823529999996" green="0.69411764710000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Q-XR-gtE">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Q-XR-gtE">
                                 <rect key="frame" x="256" y="509" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="infoButton">
@@ -235,7 +235,7 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="infoButtonTapped:" destination="Yyd-as-VEp" eventType="touchUpInside" id="4Wd-K7-mAU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-pb-Hln">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-pb-Hln">
                                 <rect key="frame" x="28" y="509" width="39" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="replayIcon">
@@ -248,7 +248,9 @@ To me, that is what WWDC is about - bringing together developers from around the
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YXu-pb-Hln" firstAttribute="centerY" secondItem="s4Q-XR-gtE" secondAttribute="centerY" id="4aN-2z-VUK"/>
                             <constraint firstAttribute="centerX" secondItem="WQb-gN-ZOM" secondAttribute="centerX" id="6qd-0K-QhK"/>
+                            <constraint firstItem="YXu-pb-Hln" firstAttribute="centerY" secondItem="ltE-gj-mbf" secondAttribute="centerY" id="nyC-vV-tof"/>
                             <constraint firstAttribute="centerY" secondItem="WQb-gN-ZOM" secondAttribute="centerY" constant="17" id="wdk-26-ZHG"/>
                         </constraints>
                     </view>

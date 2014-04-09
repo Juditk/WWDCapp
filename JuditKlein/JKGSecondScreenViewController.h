@@ -22,6 +22,7 @@
 @property (nonatomic, strong) IBOutlet UIImageView *displayedImage;
 @property (nonatomic, strong) NSString *imagePrefix;
 @property (nonatomic, strong) NSArray *foundImagesWithPrefix;
+@property (nonatomic) int currentImageIndex;
 
 - (void) showSecondScreenContent;
 + (JKGSecondScreenViewController *) sharedManager;

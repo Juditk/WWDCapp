@@ -14,7 +14,7 @@
 
 @implementation JKGSecondScreenViewController
 
-@synthesize secondWindow, displayedImage, foundImagesWithPrefix, imagePrefix;
+@synthesize secondWindow, displayedImage, foundImagesWithPrefix, imagePrefix, currentImageIndex;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
