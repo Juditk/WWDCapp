@@ -41,9 +41,8 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated
-{    
-    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:(222/255.0) green:(177/255.0) blue:(73/255.0) alpha:1]];
-    //[[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,6 +78,10 @@
     
     JKGCountryProjectDetail *projDetail = [[country countryProjects]objectAtIndex:indexPath.row];
     cell.textLabel.text = projDetail.projectName;
+    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    //cell.imageView.image = [UIImage imageNamed:@"plane"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"accessoryicon"]];
+    cell.accessoryView = imageView;
     
     return cell;
 }
@@ -86,6 +89,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"showDetail" sender:nil];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+
 }
 
 

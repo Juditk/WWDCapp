@@ -2,6 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
+	<string>We are about to begin the safety briefing, please ensure that audio is enabled on your device.</string>
 	<string>Hello and welcome aboard this flight bound for several exciting destinations today. I am Yew Dit, your captain.</string>
 	<string>Before we take off, make sure your objects are stowed away in a safe array that will not be released. Those using arc may want to keep an eye on their objects at all times.</string>
 	<string>Keep an eye on the lighted signs and don’t ignore any warnings.</string>

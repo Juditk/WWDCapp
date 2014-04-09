@@ -37,6 +37,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:(222/255.0) green:(177/255.0) blue:(73/255.0) alpha:1]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:(239/255.0) green:(238/255.0) blue:(222/255.0) alpha:1]];
     
     if ( [CLLocationManager headingAvailable]) {
         [self setUpLocation];

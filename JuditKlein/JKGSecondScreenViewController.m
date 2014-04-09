@@ -25,6 +25,7 @@
     return self;
 }
 
+
 + (JKGSecondScreenViewController *) sharedManager
 {
     static JKGSecondScreenViewController *sharedSecondScreen = nil;
@@ -41,6 +42,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     displayedImage.image = [UIImage imageNamed:@"secondscreenbg"];
+    
 
 }
 
