@@ -38,7 +38,7 @@
     speechStrings = [NSArray arrayWithContentsOfFile:path];
     
     if ( speechStrings ) {
-        NSLog(@"%@",speechStrings);
+        //NSLog(@"%@",speechStrings);
         currentSpeechItem = 0;
     }
 
@@ -86,6 +86,7 @@
 - (IBAction)skipSafeyBriefing:(id)sender
 {
     [self.synthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+    self.synthesizer = nil;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

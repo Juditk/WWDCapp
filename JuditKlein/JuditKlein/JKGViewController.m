@@ -44,6 +44,8 @@
         [self setUpLocation];
     }
     
+    stampCount = 0;
+    
     [self setImageStates];
 }
 
@@ -200,13 +202,18 @@
 {
     if ( ![[[JKGDatabase sharedDatabase]countriesVisited]objectForKey:countryCodeToCheck] ) {
         return [UIImage imageNamed:countryCodeToCheck];
+
     } else {
+        stampCount++;
         return [UIImage imageNamed:[NSString stringWithFormat:@"%@stamp",countryCodeToCheck]];
     }
+    
+
 }
 
 - (void)setImageStates
 {
+    
     [goToTVU.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToTVU setImage:[self getButtonStateForCountry:@"TVU"] forState:UIControlStateNormal];
     
@@ -224,6 +231,15 @@
     
     [goToMEL.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToMEL setImage:[self getButtonStateForCountry:@"MEL"] forState:UIControlStateNormal];
+    
+    if ( stampCount == 6) {
+        
+        if ( ![[JKGDatabase sharedDatabase]hasUnlockedAchievement]) {
+            
+            [self performSegueWithIdentifier:@"achievement" sender:self];
+            [[JKGDatabase sharedDatabase]setHasUnlockedAchievement:YES];
+        }
+    }
 }
 
 #pragma mark location manager

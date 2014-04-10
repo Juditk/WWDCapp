@@ -19,6 +19,77 @@
             </objects>
             <point key="canvasLocation" x="-260" y="-280"/>
         </scene>
+        <!--Achievement View Controller-->
+        <scene sceneID="bS7-43-PVu">
+            <objects>
+                <viewController id="dz3-77-wDh" customClass="JKGAchievementViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6tK-Ku-lWQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="tXc-50-2Cn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UOP-B7-WF4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgcolour" translatesAutoresizingMaskIntoConstraints="NO" id="thk-HL-lQl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge" translatesAutoresizingMaskIntoConstraints="NO" id="mBK-6V-Q4e">
+                                <rect key="frame" x="40" y="94" width="240" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ8-ub-n43">
+                                <rect key="frame" x="126" y="518" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e2a-wN-zAt"/>
+                                    <constraint firstAttribute="width" constant="68" id="qnk-Tk-v6q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" red="0.87058823529999996" green="0.69411764710000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dimsissView:" destination="dz3-77-wDh" eventType="touchUpInside" id="VMm-94-LNF"/>
+                                </connections>
+                            </button>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20B-e0-AKz">
+                                <rect key="frame" x="30" y="383" width="260" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Achievement Unlocked!
+
+World traveller:
+congratulations, you've visited all the countries and collected all the stamps.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="20B-e0-AKz" firstAttribute="leading" secondItem="UOP-B7-WF4" secondAttribute="leading" constant="30" id="0Yt-f0-dZN"/>
+                            <constraint firstAttribute="bottom" secondItem="vQ8-ub-n43" secondAttribute="bottom" constant="20" symbolic="YES" id="2Ns-1j-BZB"/>
+                            <constraint firstItem="thk-HL-lQl" firstAttribute="leading" secondItem="UOP-B7-WF4" secondAttribute="leading" id="5Lf-Od-ovM"/>
+                            <constraint firstItem="20B-e0-AKz" firstAttribute="top" secondItem="mBK-6V-Q4e" secondAttribute="bottom" constant="26" id="BCT-9w-p84"/>
+                            <constraint firstItem="vQ8-ub-n43" firstAttribute="top" secondItem="20B-e0-AKz" secondAttribute="bottom" constant="8" symbolic="YES" id="Grf-af-h0Q"/>
+                            <constraint firstItem="thk-HL-lQl" firstAttribute="centerX" secondItem="mBK-6V-Q4e" secondAttribute="centerX" id="Kjt-NJ-CBx"/>
+                            <constraint firstItem="thk-HL-lQl" firstAttribute="top" secondItem="UOP-B7-WF4" secondAttribute="top" id="LWu-DG-ejq"/>
+                            <constraint firstItem="20B-e0-AKz" firstAttribute="centerX" secondItem="mBK-6V-Q4e" secondAttribute="centerX" id="QKH-T6-waU"/>
+                            <constraint firstItem="vQ8-ub-n43" firstAttribute="centerX" secondItem="20B-e0-AKz" secondAttribute="centerX" id="aVL-0Y-fyW"/>
+                            <constraint firstItem="mBK-6V-Q4e" firstAttribute="top" secondItem="6tK-Ku-lWQ" secondAttribute="bottom" constant="94" id="tI4-vz-hES"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="badgeImage" destination="mBK-6V-Q4e" id="sk3-qi-tlw"/>
+                        <outlet property="textView" destination="20B-e0-AKz" id="4mG-V5-neh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eO-Yc-HvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="-1038"/>
+        </scene>
         <!--Safety Video View Controller-->
         <scene sceneID="SFA-Sd-WYO">
             <objects>
@@ -31,12 +102,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-YQ-9n0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-YQ-9n0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmr-S0-3Nc">
-                                <rect key="frame" x="82" y="518" width="157" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmr-S0-3Nc">
+                                <rect key="frame" x="82" y="515" width="157" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Skip safety briefing">
@@ -49,6 +120,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aPC-YQ-9n0" firstAttribute="leading" secondItem="su3-IJ-CIa" secondAttribute="leading" id="0iX-Vt-phq"/>
+                            <constraint firstAttribute="bottom" secondItem="aPC-YQ-9n0" secondAttribute="bottom" id="39b-sI-7DW"/>
+                            <constraint firstItem="aPC-YQ-9n0" firstAttribute="top" secondItem="su3-IJ-CIa" secondAttribute="top" id="VUV-mk-WQH"/>
+                            <constraint firstAttribute="bottom" secondItem="Wmr-S0-3Nc" secondAttribute="bottom" constant="20" id="XIe-kD-sAK"/>
+                            <constraint firstAttribute="trailing" secondItem="aPC-YQ-9n0" secondAttribute="trailing" id="b6F-O9-pLZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Wmr-S0-3Nc" secondAttribute="trailing" constant="81" id="nVh-Kk-4pR"/>
+                            <constraint firstItem="Wmr-S0-3Nc" firstAttribute="leading" secondItem="su3-IJ-CIa" secondAttribute="leading" constant="82" id="sjN-KY-Q16"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6iM-of-WXS"/>
                     <connections>
@@ -57,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIX-TF-sbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="-1041"/>
+            <point key="canvasLocation" x="759" y="-1053"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="XwS-vc-t5K">
@@ -75,7 +155,7 @@
                                 <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czX-tx-JJM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czX-tx-JJM">
                                 <rect key="frame" x="142" y="518" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done">
@@ -97,7 +177,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">My name is Judit Klein.
-I am a notorious traveller currently living in Auckland, New Zealand 
+I am a notorious traveller from Hungary, currently living in Auckland, New Zealand 
 
 That's what this app represents: my passions, my hobby, my work, my research, all intertwined by my love of travel and the places I've had the opportunity to visit.
 
@@ -106,29 +186,34 @@ To me, that is what WWDC is about - bringing together developers from around the
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons1" translatesAutoresizingMaskIntoConstraints="NO" id="IKz-QW-kYz">
-                                <rect key="frame" x="41" y="370" width="49" height="130"/>
+                                <rect key="frame" x="41" y="352" width="49" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+6421 113 6935" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhT-IV-CSc">
-                                <rect key="frame" x="98" y="382" width="125" height="21"/>
+                                <rect key="frame" x="98" y="364" width="125" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jklein@aut.ac.nz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVi-19-Lr9">
-                                <rect key="frame" x="98" y="424" width="125" height="21"/>
+                                <rect key="frame" x="98" y="406" width="125" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@juditk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9K2-8Z-nLr">
-                                <rect key="frame" x="98" y="466" width="125" height="21"/>
+                                <rect key="frame" x="98" y="448" width="125" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="czX-tx-JJM" secondAttribute="trailing" constant="141" id="8HM-e2-5qw"/>
+                            <constraint firstItem="czX-tx-JJM" firstAttribute="leading" secondItem="DoA-3L-DvS" secondAttribute="leading" constant="142" id="DDI-GX-m0V"/>
+                            <constraint firstItem="Ud2-m4-zcn" firstAttribute="top" secondItem="czX-tx-JJM" secondAttribute="bottom" constant="20" id="Tal-FN-WoP"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="mWy-sO-ZF1" id="h3e-FI-cAy"/>
@@ -150,13 +235,17 @@ To me, that is what WWDC is about - bringing together developers from around the
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLR-8D-QZz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aLR-8D-QZz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4u-KS-Bbt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4u-KS-Bbt">
                                 <rect key="frame" x="28" y="108" width="80" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="oNf-mn-nkL"/>
+                                    <constraint firstAttribute="width" constant="80" id="rRW-1P-1d7"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -164,9 +253,12 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="destinationBUD:" destination="Yyd-as-VEp" eventType="touchUpInside" id="TTV-ph-Mvq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1y-Sy-dVv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1y-Sy-dVv">
                                 <rect key="frame" x="120" y="45" width="80" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="NqJ-Xc-hRX"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -175,7 +267,7 @@ To me, that is what WWDC is about - bringing together developers from around the
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL1-n7-lll">
-                                <rect key="frame" x="120" y="441" width="80" height="62"/>
+                                <rect key="frame" x="120" y="435" width="80" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -184,9 +276,12 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="destinationMEL:" destination="Yyd-as-VEp" eventType="touchUpInside" id="ZYj-QG-BgU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jee-Ic-YF8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jee-Ic-YF8">
                                 <rect key="frame" x="215" y="104" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="LPQ-rI-t3S"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -194,8 +289,8 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="destinationTXL:" destination="Yyd-as-VEp" eventType="touchUpInside" id="UBd-4K-wn1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9v-SK-GVU">
-                                <rect key="frame" x="13" y="377" width="110" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9v-SK-GVU">
+                                <rect key="frame" x="53" y="393" width="30" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -204,8 +299,8 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="destinationTVU:" destination="Yyd-as-VEp" eventType="touchUpInside" id="i8u-0t-une"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybl-dq-WAe">
-                                <rect key="frame" x="220" y="371" width="80" height="61"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybl-dq-WAe">
+                                <rect key="frame" x="270" y="398" width="30" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -214,18 +309,22 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="destinationAKL:" destination="Yyd-as-VEp" eventType="touchUpInside" id="Fba-91-hFc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-gN-ZOM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-gN-ZOM">
                                 <rect key="frame" x="120" y="227" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="8Sg-Sl-xs6"/>
+                                    <constraint firstAttribute="height" constant="80" id="Edd-AN-fP3"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap on an airport to take off." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-gj-mbf">
-                                <rect key="frame" x="75" y="527" width="173" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on an airport to take off." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-gj-mbf">
+                                <rect key="frame" x="74" y="515" width="172" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.87058823529999996" green="0.69411764710000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Q-XR-gtE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Q-XR-gtE">
                                 <rect key="frame" x="256" y="509" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="infoButton">
@@ -235,9 +334,12 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="infoButtonTapped:" destination="Yyd-as-VEp" eventType="touchUpInside" id="4Wd-K7-mAU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-pb-Hln">
-                                <rect key="frame" x="28" y="509" width="39" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-pb-Hln">
+                                <rect key="frame" x="28" y="510" width="39" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="gXf-Nv-CoD"/>
+                                </constraints>
                                 <state key="normal" image="replayIcon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -248,10 +350,32 @@ To me, that is what WWDC is about - bringing together developers from around the
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YXu-pb-Hln" firstAttribute="centerY" secondItem="s4Q-XR-gtE" secondAttribute="centerY" id="4aN-2z-VUK"/>
+                            <constraint firstItem="YXu-pb-Hln" firstAttribute="top" secondItem="D9v-SK-GVU" secondAttribute="bottom" constant="83" id="20f-xU-MR4"/>
+                            <constraint firstItem="X1y-Sy-dVv" firstAttribute="top" secondItem="zha-p4-8sp" secondAttribute="bottom" constant="1" id="593-tV-TQi"/>
+                            <constraint firstItem="ltE-gj-mbf" firstAttribute="leading" secondItem="YXu-pb-Hln" secondAttribute="trailing" constant="7" id="5VA-H9-pL6"/>
                             <constraint firstAttribute="centerX" secondItem="WQb-gN-ZOM" secondAttribute="centerX" id="6qd-0K-QhK"/>
-                            <constraint firstItem="YXu-pb-Hln" firstAttribute="centerY" secondItem="ltE-gj-mbf" secondAttribute="centerY" id="nyC-vV-tof"/>
+                            <constraint firstAttribute="bottom" secondItem="aLR-8D-QZz" secondAttribute="bottom" id="CZt-Z4-3YH"/>
+                            <constraint firstItem="A4u-KS-Bbt" firstAttribute="top" secondItem="zha-p4-8sp" secondAttribute="bottom" constant="64" id="K4E-Dd-fCr"/>
+                            <constraint firstItem="s4Q-XR-gtE" firstAttribute="trailing" secondItem="ybl-dq-WAe" secondAttribute="trailing" id="KEF-Wf-hhS"/>
+                            <constraint firstItem="A4u-KS-Bbt" firstAttribute="centerX" secondItem="D9v-SK-GVU" secondAttribute="centerX" id="LyY-Je-3Jl"/>
+                            <constraint firstAttribute="trailing" secondItem="jee-Ic-YF8" secondAttribute="trailing" constant="25" id="PP2-zX-DRu"/>
+                            <constraint firstAttribute="trailing" secondItem="s4Q-XR-gtE" secondAttribute="trailing" constant="20" symbolic="YES" id="PvR-Sa-Ydh"/>
+                            <constraint firstItem="jee-Ic-YF8" firstAttribute="top" secondItem="zha-p4-8sp" secondAttribute="bottom" constant="60" id="TJI-M3-TAw"/>
+                            <constraint firstItem="X1y-Sy-dVv" firstAttribute="leading" secondItem="aEA-d9-MBw" secondAttribute="leading" constant="120" id="TjT-UD-kcn"/>
+                            <constraint firstItem="ltE-gj-mbf" firstAttribute="centerY" secondItem="YXu-pb-Hln" secondAttribute="centerY" id="VHn-4I-MsP"/>
+                            <constraint firstItem="A4u-KS-Bbt" firstAttribute="centerY" secondItem="jee-Ic-YF8" secondAttribute="centerY" id="atj-Bi-v8R"/>
+                            <constraint firstItem="YXu-pb-Hln" firstAttribute="leading" secondItem="aEA-d9-MBw" secondAttribute="leading" constant="28" id="bcT-lb-qcz"/>
+                            <constraint firstAttribute="trailing" secondItem="aLR-8D-QZz" secondAttribute="trailing" id="bgm-ML-oY5"/>
+                            <constraint firstItem="YXu-pb-Hln" firstAttribute="leading" secondItem="A4u-KS-Bbt" secondAttribute="leading" id="hbB-NS-CRG"/>
+                            <constraint firstItem="ltE-gj-mbf" firstAttribute="centerY" secondItem="s4Q-XR-gtE" secondAttribute="centerY" id="j8i-aM-VBd"/>
+                            <constraint firstItem="aLR-8D-QZz" firstAttribute="top" secondItem="aEA-d9-MBw" secondAttribute="top" id="lj8-Ig-hoF"/>
+                            <constraint firstItem="s4Q-XR-gtE" firstAttribute="top" secondItem="ybl-dq-WAe" secondAttribute="bottom" constant="77" id="lm1-v0-aIo"/>
+                            <constraint firstAttribute="trailing" secondItem="X1y-Sy-dVv" secondAttribute="trailing" constant="120" id="n0A-TO-iWh"/>
+                            <constraint firstItem="KtE-1b-U86" firstAttribute="top" secondItem="ltE-gj-mbf" secondAttribute="bottom" constant="20" id="uqO-U5-Z9G"/>
+                            <constraint firstItem="KtE-1b-U86" firstAttribute="top" secondItem="YXu-pb-Hln" secondAttribute="bottom" constant="14" id="v04-n5-8bk"/>
+                            <constraint firstItem="WQb-gN-ZOM" firstAttribute="centerX" secondItem="ltE-gj-mbf" secondAttribute="centerX" id="vr1-DV-KDu"/>
                             <constraint firstAttribute="centerY" secondItem="WQb-gN-ZOM" secondAttribute="centerY" constant="17" id="wdk-26-ZHG"/>
+                            <constraint firstItem="aLR-8D-QZz" firstAttribute="leading" secondItem="aEA-d9-MBw" secondAttribute="leading" id="xTI-Il-lxP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CcU-4v-0Yk"/>
@@ -269,6 +393,7 @@ To me, that is what WWDC is about - bringing together developers from around the
                         <segue destination="w5O-uf-9cp" kind="push" identifier="goto" id="0fq-fg-KMs"/>
                         <segue destination="skT-XB-ZHx" kind="modal" identifier="safetyVideo" id="kWZ-8A-Zhy"/>
                         <segue destination="1Tc-yA-Ov8" kind="modal" identifier="infoScreen" id="rHq-uM-iYm"/>
+                        <segue destination="dz3-77-wDh" kind="modal" identifier="achievement" customClass="JKGCustomSegue" animates="NO" id="HTc-zr-nRX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfY-xM-xeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -301,8 +426,8 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <outlet property="delegate" destination="w5O-uf-9cp" id="znR-gg-hbu"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOe-Jz-eKM">
-                                <rect key="frame" x="100" y="508" width="120" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOe-Jz-eKM">
+                                <rect key="frame" x="100" y="514" width="120" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -313,6 +438,11 @@ To me, that is what WWDC is about - bringing together developers from around the
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EOe-Jz-eKM" firstAttribute="leading" secondItem="tbB-YU-Ltr" secondAttribute="leading" constant="100" id="0hS-Qz-avF"/>
+                            <constraint firstAttribute="trailing" secondItem="EOe-Jz-eKM" secondAttribute="trailing" constant="100" id="Fk2-MU-2ap"/>
+                            <constraint firstAttribute="bottom" secondItem="EOe-Jz-eKM" secondAttribute="bottom" constant="20" id="phT-Ye-pTB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j2d-nu-OCX"/>
                     <connections>
@@ -380,6 +510,8 @@ To me, that is what WWDC is about - bringing together developers from around the
     </scenes>
     <resources>
         <image name="airplayIcon" width="26" height="22"/>
+        <image name="badge" width="240" height="263"/>
+        <image name="bgcolour" width="320" height="568"/>
         <image name="icons1" width="49" height="130"/>
         <image name="infoBackground" width="320" height="567"/>
         <image name="infoButton" width="44" height="45"/>

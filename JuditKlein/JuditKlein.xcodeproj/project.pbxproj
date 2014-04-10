@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2414D9B18F5D8DD00344256 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2414D9A18F5D8DD00344256 /* AudioToolbox.framework */; };
+		B2414DA118F6682100344256 /* JKGAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2414DA018F6682100344256 /* JKGAchievementViewController.m */; };
 		B2DA138D18F51B92002F84FC /* txl00.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2DA138718F51B92002F84FC /* txl00.jpeg */; };
 		B2DA138E18F51B92002F84FC /* txl01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2DA138818F51B92002F84FC /* txl01.jpeg */; };
 		B2DA138F18F51B92002F84FC /* txl02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2DA138918F51B92002F84FC /* txl02.jpeg */; };
@@ -163,6 +165,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2414D9A18F5D8DD00344256 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B2414D9F18F6682100344256 /* JKGAchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKGAchievementViewController.h; sourceTree = "<group>"; };
+		B2414DA018F6682100344256 /* JKGAchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKGAchievementViewController.m; sourceTree = "<group>"; };
 		B2DA138718F51B92002F84FC /* txl00.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = txl00.jpeg; sourceTree = "<group>"; };
 		B2DA138818F51B92002F84FC /* txl01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = txl01.jpeg; sourceTree = "<group>"; };
 		B2DA138918F51B92002F84FC /* txl02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = txl02.jpeg; sourceTree = "<group>"; };
@@ -327,6 +332,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2414D9B18F5D8DD00344256 /* AudioToolbox.framework in Frameworks */,
 				B2E9A35018F2779D00B1EC87 /* PassKit.framework in Frameworks */,
 				B2E9A34118F2220900B1EC87 /* AVFoundation.framework in Frameworks */,
 				B2E9A33F18F1F28500B1EC87 /* CoreLocation.framework in Frameworks */,
@@ -350,6 +356,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2414DA518F66CA800344256 /* Unock Achievment */ = {
+			isa = PBXGroup;
+			children = (
+				B2414D9F18F6682100344256 /* JKGAchievementViewController.h */,
+				B2414DA018F6682100344256 /* JKGAchievementViewController.m */,
+			);
+			name = "Unock Achievment";
+			sourceTree = "<group>";
+		};
 		B2E9A29E18F07D3600B1EC87 = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +387,7 @@
 		B2E9A2A918F07D3700B1EC87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2414D9A18F5D8DD00344256 /* AudioToolbox.framework */,
 				B2E9A34F18F2779D00B1EC87 /* PassKit.framework */,
 				B2E9A34018F2220900B1EC87 /* AVFoundation.framework */,
 				B2E9A33E18F1F28500B1EC87 /* CoreLocation.framework */,
@@ -456,6 +472,7 @@
 		B2E9A2E118F07D7A00B1EC87 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B2414DA518F66CA800344256 /* Unock Achievment */,
 				B2E9A34418F22A2500B1EC87 /* More information */,
 				B2E9A31718F1A94900B1EC87 /* Second Screen */,
 				B2E9A2F918F084C700B1EC87 /* Country Detali */,
@@ -825,6 +842,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = juditk;
 				TargetAttributes = {
+					B2E9A2A618F07D3700B1EC87 = {
+						DevelopmentTeam = YX4H9JXS4N;
+					};
 					B2E9A2C718F07D3700B1EC87 = {
 						TestTargetID = B2E9A2A618F07D3700B1EC87;
 					};
@@ -992,6 +1012,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E9A2EF18F07FCC00B1EC87 /* JKGSafetyVideoViewController.m in Sources */,
+				B2414DA118F6682100344256 /* JKGAchievementViewController.m in Sources */,
 				B2E9A34718F22A3D00B1EC87 /* JKGInfoViewController.m in Sources */,
 				B2E9A30018F0A5B800B1EC87 /* JKGDatabase.m in Sources */,
 				B2E9A2E718F07E0200B1EC87 /* JKGCountry.m in Sources */,
@@ -1127,10 +1148,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JuditKlein/JuditKlein-Prefix.pch";
 				INFOPLIST_FILE = "JuditKlein/JuditKlein-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1140,10 +1163,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JuditKlein/JuditKlein-Prefix.pch";
 				INFOPLIST_FILE = "JuditKlein/JuditKlein-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

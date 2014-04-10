@@ -41,7 +41,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    displayedImage.image = [UIImage imageNamed:@"secondscreenbg"];
+    displayedImage.image = [UIImage imageNamed:@"inflightdefault"];
     
 
 }
@@ -159,7 +159,7 @@
     } else {
         
         NSLog(@"There is no content to display yet");
-        displayedImage.image = [UIImage imageNamed:@"secondscreenbg"];
+        displayedImage.image = [UIImage imageNamed:@"inflightdefault"];
     }
     
     
@@ -183,7 +183,7 @@
 {
     [timer invalidate];
     foundImagesWithPrefix = nil;
-    displayedImage.image = [UIImage imageNamed:@"secondscreenbg"];
+    displayedImage.image = [UIImage imageNamed:@"inflightdefault"];
 }
 
 - (void)didReceiveMemoryWarning

@@ -12,6 +12,7 @@
 #import "JKGCountryViewController.h"
 #import "JKGDatabase.h"
 #import "JKGCountry.h"
+#import "JKGAchievementViewController.h"
 
 @interface JKGViewController : UIViewController <CLLocationManagerDelegate>
 {
@@ -26,6 +27,8 @@
     NSString *countryCode;
     CLLocationManager *locationManager;
     NSMutableArray *queue;
+    int stampCount;
+    JKGAchievementViewController *achievementController;
 }
 
 @property (nonatomic, strong) IBOutlet UIImageView *backgroundImage;

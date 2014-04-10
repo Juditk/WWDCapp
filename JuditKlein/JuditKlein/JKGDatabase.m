@@ -10,7 +10,7 @@
 
 @implementation JKGDatabase
 
-@synthesize countriesList, countriesVisited, hasPlayedSafetyVideo;
+@synthesize countriesList, countriesVisited, hasPlayedSafetyVideo, hasUnlockedAchievement;
 
 + (JKGDatabase *) sharedDatabase
 {

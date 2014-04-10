@@ -29,7 +29,9 @@
 {
     [super viewDidLoad];
     backgroundImage.image = [UIImage imageNamed:@"bgcolour"];
+    
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    self.navigationItem.title = projectDetail.projectName;
     
     NSMutableString *contentString = [NSMutableString stringWithFormat:@"%@",projectDetail.projectBlurb];
     
@@ -39,7 +41,10 @@
     }
     
     textView.text = contentString;
+    textView.dataDetectorTypes = UIDataDetectorTypeLink;
+    textView.linkTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithRed:(222/255.0) green:(177/255.0) blue:(73/255.0) alpha:1], NSUnderlineStyleAttributeName: [NSNumber numberWithInt:NSUnderlineStyleSingle]};
 
+    
     [[JKGSecondScreenViewController sharedManager]setImagePrefix:projectDetail.imagePrefix];
     [[JKGSecondScreenViewController sharedManager]showSecondScreenContent];
 
