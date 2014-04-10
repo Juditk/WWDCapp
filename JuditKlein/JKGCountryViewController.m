@@ -37,6 +37,7 @@
     } else {
         [passbookLocalButton setImage:[UIImage imageNamed:@"passbooken"] forState:UIControlStateNormal];
     }
+    passbookLocalButton.exclusiveTouch = YES;
     
 }
 
@@ -78,8 +79,7 @@
     
     JKGCountryProjectDetail *projDetail = [[country countryProjects]objectAtIndex:indexPath.row];
     cell.textLabel.text = projDetail.projectName;
-    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    //cell.imageView.image = [UIImage imageNamed:@"plane"];
+
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"accessoryicon"]];
     cell.accessoryView = imageView;
     
@@ -90,7 +90,6 @@
 {
     [self performSegueWithIdentifier:@"showDetail" sender:nil];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-
 }
 
 

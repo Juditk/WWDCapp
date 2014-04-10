@@ -317,16 +317,12 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <constraint firstAttribute="height" constant="80" id="Edd-AN-fP3"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on an airport to take off." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-gj-mbf">
-                                <rect key="frame" x="74" y="515" width="172" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.87058823529999996" green="0.69411764710000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Q-XR-gtE">
                                 <rect key="frame" x="256" y="509" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="R4V-tp-LxA"/>
+                                </constraints>
                                 <state key="normal" image="infoButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -347,13 +343,21 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="replayBriefing:" destination="Yyd-as-VEp" eventType="touchUpInside" id="Deq-h4-BaB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on an airport to take off." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Yb-pId">
+                                <rect key="frame" x="76" y="532" width="172" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.87058823529999996" green="0.69411764710000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YXu-pb-Hln" firstAttribute="top" secondItem="D9v-SK-GVU" secondAttribute="bottom" constant="83" id="20f-xU-MR4"/>
+                            <constraint firstItem="KtE-1b-U86" firstAttribute="top" secondItem="YFp-Yb-pId" secondAttribute="bottom" constant="20" id="2x8-0U-tAA"/>
                             <constraint firstItem="X1y-Sy-dVv" firstAttribute="top" secondItem="zha-p4-8sp" secondAttribute="bottom" constant="1" id="593-tV-TQi"/>
-                            <constraint firstItem="ltE-gj-mbf" firstAttribute="leading" secondItem="YXu-pb-Hln" secondAttribute="trailing" constant="7" id="5VA-H9-pL6"/>
                             <constraint firstAttribute="centerX" secondItem="WQb-gN-ZOM" secondAttribute="centerX" id="6qd-0K-QhK"/>
+                            <constraint firstItem="s4Q-XR-gtE" firstAttribute="leading" secondItem="YFp-Yb-pId" secondAttribute="trailing" constant="8" id="B9O-Fd-xSc"/>
                             <constraint firstAttribute="bottom" secondItem="aLR-8D-QZz" secondAttribute="bottom" id="CZt-Z4-3YH"/>
                             <constraint firstItem="A4u-KS-Bbt" firstAttribute="top" secondItem="zha-p4-8sp" secondAttribute="bottom" constant="64" id="K4E-Dd-fCr"/>
                             <constraint firstItem="s4Q-XR-gtE" firstAttribute="trailing" secondItem="ybl-dq-WAe" secondAttribute="trailing" id="KEF-Wf-hhS"/>
@@ -362,18 +366,16 @@ To me, that is what WWDC is about - bringing together developers from around the
                             <constraint firstAttribute="trailing" secondItem="s4Q-XR-gtE" secondAttribute="trailing" constant="20" symbolic="YES" id="PvR-Sa-Ydh"/>
                             <constraint firstItem="jee-Ic-YF8" firstAttribute="top" secondItem="zha-p4-8sp" secondAttribute="bottom" constant="60" id="TJI-M3-TAw"/>
                             <constraint firstItem="X1y-Sy-dVv" firstAttribute="leading" secondItem="aEA-d9-MBw" secondAttribute="leading" constant="120" id="TjT-UD-kcn"/>
-                            <constraint firstItem="ltE-gj-mbf" firstAttribute="centerY" secondItem="YXu-pb-Hln" secondAttribute="centerY" id="VHn-4I-MsP"/>
                             <constraint firstItem="A4u-KS-Bbt" firstAttribute="centerY" secondItem="jee-Ic-YF8" secondAttribute="centerY" id="atj-Bi-v8R"/>
                             <constraint firstItem="YXu-pb-Hln" firstAttribute="leading" secondItem="aEA-d9-MBw" secondAttribute="leading" constant="28" id="bcT-lb-qcz"/>
                             <constraint firstAttribute="trailing" secondItem="aLR-8D-QZz" secondAttribute="trailing" id="bgm-ML-oY5"/>
                             <constraint firstItem="YXu-pb-Hln" firstAttribute="leading" secondItem="A4u-KS-Bbt" secondAttribute="leading" id="hbB-NS-CRG"/>
-                            <constraint firstItem="ltE-gj-mbf" firstAttribute="centerY" secondItem="s4Q-XR-gtE" secondAttribute="centerY" id="j8i-aM-VBd"/>
                             <constraint firstItem="aLR-8D-QZz" firstAttribute="top" secondItem="aEA-d9-MBw" secondAttribute="top" id="lj8-Ig-hoF"/>
                             <constraint firstItem="s4Q-XR-gtE" firstAttribute="top" secondItem="ybl-dq-WAe" secondAttribute="bottom" constant="77" id="lm1-v0-aIo"/>
                             <constraint firstAttribute="trailing" secondItem="X1y-Sy-dVv" secondAttribute="trailing" constant="120" id="n0A-TO-iWh"/>
-                            <constraint firstItem="KtE-1b-U86" firstAttribute="top" secondItem="ltE-gj-mbf" secondAttribute="bottom" constant="20" id="uqO-U5-Z9G"/>
+                            <constraint firstItem="YFp-Yb-pId" firstAttribute="leading" secondItem="YXu-pb-Hln" secondAttribute="trailing" constant="9" id="tlC-bR-flx"/>
+                            <constraint firstItem="s4Q-XR-gtE" firstAttribute="bottom" secondItem="YXu-pb-Hln" secondAttribute="bottom" id="uKn-zr-EyU"/>
                             <constraint firstItem="KtE-1b-U86" firstAttribute="top" secondItem="YXu-pb-Hln" secondAttribute="bottom" constant="14" id="v04-n5-8bk"/>
-                            <constraint firstItem="WQb-gN-ZOM" firstAttribute="centerX" secondItem="ltE-gj-mbf" secondAttribute="centerX" id="vr1-DV-KDu"/>
                             <constraint firstAttribute="centerY" secondItem="WQb-gN-ZOM" secondAttribute="centerY" constant="17" id="wdk-26-ZHG"/>
                             <constraint firstItem="aLR-8D-QZz" firstAttribute="leading" secondItem="aEA-d9-MBw" secondAttribute="leading" id="xTI-Il-lxP"/>
                         </constraints>

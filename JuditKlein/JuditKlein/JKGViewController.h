@@ -24,6 +24,8 @@
     UIButton *goToMEL;
     UIButton *goToSFO;
     UIButton *goToTVU;
+    UIButton *replayButton;
+    UIButton *infoButton;
     NSString *countryCode;
     CLLocationManager *locationManager;
     NSMutableArray *queue;
@@ -39,6 +41,8 @@
 @property (nonatomic, strong) IBOutlet UIButton *goToMEL;
 @property (nonatomic, strong) IBOutlet UIButton *goToSFO;
 @property (nonatomic, strong) IBOutlet UIButton *goToTVU;
+@property (nonatomic, strong) IBOutlet UIButton *infoButton;
+@property (nonatomic, strong) IBOutlet UIButton *replayButton;
 @property (nonatomic, strong) NSString *countryCode;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 

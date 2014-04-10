@@ -14,7 +14,7 @@
 
 @implementation JKGViewController
 
-@synthesize backgroundImage, planeImage, goToAKL, goToBUD, goToMEL, goToSFO, goToTVU, goToTXL, countryCode, locationManager;
+@synthesize backgroundImage, planeImage, goToAKL, goToBUD, goToMEL, goToSFO, goToTVU, goToTXL, countryCode, locationManager, replayButton, infoButton;
 
 - (void)viewDidLoad
 {
@@ -28,10 +28,8 @@
 
     [self setImageStates];
     
-    if ( ![[JKGDatabase sharedDatabase]hasPlayedSafetyVideo]) {
-        [self performSegueWithIdentifier:@"safetyVideo" sender:self];
-        [[JKGDatabase sharedDatabase]setHasPlayedSafetyVideo:YES];
-    }
+    [self performSelector:@selector(playSafetyBriefing) withObject:nil afterDelay:0.1];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -45,6 +43,7 @@
     }
     
     stampCount = 0;
+    self.view.multipleTouchEnabled = NO;
     
     [self setImageStates];
 }
@@ -216,21 +215,30 @@
     
     [goToTVU.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToTVU setImage:[self getButtonStateForCountry:@"TVU"] forState:UIControlStateNormal];
+    goToTVU.exclusiveTouch = YES;
     
     [goToBUD.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToBUD setImage:[self getButtonStateForCountry:@"BUD"] forState:UIControlStateNormal];
+    goToBUD.exclusiveTouch = YES;
     
     [goToSFO.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToSFO setImage:[self getButtonStateForCountry:@"SFO"] forState:UIControlStateNormal];
+    goToSFO.exclusiveTouch = YES;   
     
     [goToTXL.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToTXL setImage:[self getButtonStateForCountry:@"TXL"] forState:UIControlStateNormal];
+    goToTXL.exclusiveTouch = YES;
     
     [goToAKL.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToAKL setImage:[self getButtonStateForCountry:@"AKL"] forState:UIControlStateNormal];
+    goToAKL.exclusiveTouch = YES;
     
     [goToMEL.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [goToMEL setImage:[self getButtonStateForCountry:@"MEL"] forState:UIControlStateNormal];
+    goToMEL.exclusiveTouch = YES;
+    
+    infoButton.exclusiveTouch = YES;
+    replayButton.exclusiveTouch = YES;
     
     if ( stampCount == 6) {
         
@@ -256,7 +264,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)heading
 {
     int newHeading;
-    int queuecount;
+    NSUInteger queuecount;
     
     newHeading = heading.trueHeading;
     [queue addObject:[NSNumber numberWithInt:newHeading]];
@@ -299,6 +307,14 @@
 - (IBAction)replayBriefing:(id)sender
 {
     [self performSegueWithIdentifier:@"safetyVideo" sender:self];
+}
+
+- (void)playSafetyBriefing
+{
+    if ( ![[JKGDatabase sharedDatabase]hasPlayedSafetyVideo]) {
+        [self performSegueWithIdentifier:@"safetyVideo" sender:self];
+        [[JKGDatabase sharedDatabase]setHasPlayedSafetyVideo:YES];
+    }
 }
 
 
