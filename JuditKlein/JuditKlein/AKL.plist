@@ -28,9 +28,9 @@ My practical work focused on iOS Development in the context of tertiary educatio
 			<key>ProjectBlurb</key>
 			<string>Master of Creative Technolgies Degree at Auckland University of Technology, New Zealand (2013-2014), target completion July 2014.
                 
-A mix of theory and practical, my masters research examines the role of apps in tertiary education and notion of the ‘killer app’. The practical component of this research includes a fully functional app which supports dialogue and collaboration in a classroom environment using adhoc networking and iBeacon technology.
+A mix of theory and practical, my masters research examines the role of apps in tertiary education and the notion of the ‘killer app’. The practical component of this research includes a fully functional app which supports dialogue and collaboration in a classroom environment using adhoc networking and iBeacon technology.
                 
-The ‘Syncrasy&apos; app is a tool for university students to collaborate in real time based on micro-locations within a physical classroom space and I will be submitting it for an Apple Design Award. </string>
+The ‘Syncrasy' app is a tool for university students to collaborate in real time based on micro-locations within a physical classroom space and I intend to submit it for an Apple Design Award. </string>
 			<key>ProjectURL</key>
 			<string></string>
 			<key>ProjectImagePrefix</key>
@@ -59,7 +59,7 @@ I devise and implement projects we undertake and liaise with other departments, 
 			<string>Presentation at the Australasian Society for Computers in Learning in Tertiary Education conference.
 Wellington 2012: Future Challenges, Sustainable Futures.
                 
-Conference presentation and published paper: The peripatetic learner - the role of mobility in the formation collaborative learning spaces.</string>
+Conference presentation and published paper: The peripatetic learner - the role of mobility in the formation of collaborative learning spaces.</string>
 			<key>ProjectURL</key>
 			<string>http://bit.ly/1jPlH03</string>
 			<key>ProjectImagePrefix</key>
@@ -71,7 +71,9 @@ Conference presentation and published paper: The peripatetic learner - the role 
 			<key>ProjectBlurb</key>
 			<string>Auckland Art Gallery Audio Tour Guide (2010)
                 
-The Auckland City Art Gallery was exploring ways to create a more engaging way to deliver a multimedia audio tour guide. I worked as part of a team to develop a proof of concept that explores possible ways to deliver such a product on the iOS platform.</string>
+The Auckland City Art Gallery was exploring how to create a more engaging way of delivering a multimedia audio tour guide. I worked as part of a team to develop a proof of concept that explores possible ways to deliver such a product on the iOS platform.
+            
+This was my first iOS based project and we delivered a functional prototype.</string>
 			<key>ProjectURL</key>
 			<string></string>
 			<key>ProjectImagePrefix</key>
@@ -81,7 +83,7 @@ The Auckland City Art Gallery was exploring ways to create a more engaging way t
 			<key>ProjectName</key>
 			<string>Here and Now App</string>
 			<key>ProjectBlurb</key>
-			<string>Here and Now (2010) looked at the success of the &apos;daily deals&apos; movement and aimed to create a location based iPhone application around the premise of finding and redeeming limited time &apos;deals&apos; based on your location. </string>
+			<string>Here and Now (2011) looked at the success of the 'daily deals' movement and aimed to create a location based iPhone application around the premise of finding and redeeming limited time 'deals' based on your location. </string>
 			<key>ProjectURL</key>
 			<string></string>
 			<key>ProjectImagePrefix</key>
@@ -91,7 +93,7 @@ The Auckland City Art Gallery was exploring ways to create a more engaging way t
 			<key>ProjectName</key>
 			<string>NZ Sound Walk App</string>
 			<key>ProjectBlurb</key>
-			<string>The brief for this project was simply to explore some aspect of &apos;sound&apos; within the context of an emerging practise. I chose to explore the relationship between sound and place and created a prototype location based &apos;sound walk&apos; for iOS. I used the iOS platform as a way of using the physicality of location as a way of manipulating sound. </string>
+			<string>The brief for this project was simply to explore some aspect of 'sound' within the context of an emerging practise. I chose to explore the relationship between sound and place and created a prototype location based 'sound walk' for iOS. I used the iOS platform as a way of using the physicality of location as a way of manipulating sound. </string>
 			<key>ProjectURL</key>
 			<string></string>
 			<key>ProjectImagePrefix</key>
@@ -101,7 +103,7 @@ The Auckland City Art Gallery was exploring ways to create a more engaging way t
 			<key>ProjectName</key>
 			<string>The Great Exchange</string>
 			<key>ProjectBlurb</key>
-			<string>Consultant and project manager on a prototype app implemented at AUT University to present ecological concepts in an interactive manner as a teaching resource.</string>
+			<string>Project manager and developer on a prototype app implemented at AUT University to present ecological concepts in an interactive manner as a teaching resource.</string>
 			<key>ProjectURL</key>
 			<string></string>
 			<key>ProjectImagePrefix</key>
@@ -111,7 +113,7 @@ The Auckland City Art Gallery was exploring ways to create a more engaging way t
 			<key>ProjectName</key>
 			<string>Local Development Events</string>
 			<key>ProjectBlurb</key>
-			<string>I regularly attend and present at local technology and development related events around New Zealand. I have presented at events such as devMob and Codemania After Dark on topics related to iOS development, such as location awareness, MultiPeer Connectivity, and Dual Screen apps. I regularly contribute talks the monthly Auckland iOS Meetup.
+			<string>I regularly attend and present at local technology and development related events around New Zealand. I have presented at events such as devMob and Codemania After Dark on topics related to iOS development, such as location awareness, MultiPeer Connectivity, and Dual Screen apps. I regularly contribute talks at the monthly Auckland iOS Meetup.
                 
 I liase with Apple ANZ on education related events around Auckand and have been asked to speak on multiple occasions during the iPad Learning Tours. </string>
 			<key>ProjectURL</key>
@@ -123,7 +125,11 @@ I liase with Apple ANZ on education related events around Auckand and have been 
 			<key>ProjectName</key>
 			<string>Prezi Ambassador</string>
 			<key>ProjectBlurb</key>
-			<string>Actively promote Prezi brand and products at AUT University. My role was to create and execute a marketing plan as well as encouraging students and faculty to contribute to the open exchange of ideas in the Prezi community. I created learning resources and ran multiple training workshops.</string>
+			<string>I was selected to be in the first round of the Prezi Campus Ambassador Program. My role was to actively promote the Prezi brand and products at AUT University. I created and executed a marketing plan which aimed to encourage students and faculty to contribute to the open exchange of ideas in the Prezi community. I created learning resources and ran multiple training workshops.
+            
+Prezi would regularly run design competitions amongst the ambassadors and I won an iPad for my April Fool's Day prezi, where I created a promotional presentation for a fictional iOS app called 'Undo'.
+
+As a top performer in the program, I was selected for an on site internship at their head office in Budapest, Hungary.</string>
 			<key>ProjectURL</key>
 			<string>http://prezi.com/ambassadors/</string>
 			<key>ProjectImagePrefix</key>

@@ -28,7 +28,7 @@ This presentation covered how to integrate location awareness and contextually r
                 
 /dev/world is the annual developers conference run by the Apple Universities Consortium focused on iOS and Mac development.
                 
-This presentation covered CoreLocation the bigger picture around harnessing the potential of being context aware: going beyond simply knowing where the user is and use that information to enhance user experience.</string>
+This presentation covered CoreLocation and the bigger picture around harnessing the potential of being context aware: going beyond simply knowing where the user is and use that information to enhance user experience.</string>
 			<key>ProjectURL</key>
 			<string>http://auc.edu.au/2012/08/programming-for-mobility/</string>
 			<key>ProjectImagePrefix</key>

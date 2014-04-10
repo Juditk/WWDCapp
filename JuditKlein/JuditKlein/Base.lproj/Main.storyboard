@@ -181,7 +181,7 @@ I am a notorious traveller from Hungary, currently living in Auckland, New Zeala
 
 That's what this app represents: my passions, my hobby, my work, my research, all intertwined by my love of travel and the places I've had the opportunity to visit.
 
-To me, that is what WWDC is about - bringing together developers from around the world into one place so share those experiences and passions. </string>
+To me, that is what WWDC is about - bringing together developers from around the world into one place to share those experiences and passions. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

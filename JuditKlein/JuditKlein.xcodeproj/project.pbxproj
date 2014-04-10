@@ -464,7 +464,6 @@
 			isa = PBXGroup;
 			children = (
 				B2E9A32418F1B48A00B1EC87 /* Second Screen */,
-				B2E9A2EB18F07F8B00B1EC87 /* Safety Video */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -482,13 +481,6 @@
 				B2E9A2C018F07D3700B1EC87 /* JKGViewController.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		B2E9A2EB18F07F8B00B1EC87 /* Safety Video */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Safety Video";
 			sourceTree = "<group>";
 		};
 		B2E9A2F118F07FD100B1EC87 /* Safety Video */ = {
