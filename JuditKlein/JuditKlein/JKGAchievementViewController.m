@@ -34,6 +34,8 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     
+    //make the achievement badge animate in
+    
     [UIView animateWithDuration:1.0
                           delay:0.2
                         options: UIViewAnimationOptionCurveEaseIn
@@ -54,18 +56,9 @@
 
 -(IBAction)dimsissView:(id)sender
 {
+    NSLog(@"Achievement View Dismissed");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -16,6 +16,9 @@
 {
     self = [super init];
     if (self) {
+        
+        //initialise the country object and create a countryProjectDetail object with the contents of dictionary
+        
         countryName = [countryDictionary objectForKey:@"Name"];
         
         countryProjects = [[NSMutableArray alloc]init];

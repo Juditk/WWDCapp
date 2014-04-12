@@ -40,7 +40,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //when the view first loads, set the second screen content to default
     displayedImage.image = [UIImage imageNamed:@"inflightdefault"];
     
 
@@ -79,12 +80,9 @@
         [self showSecondScreenContent];
         
     }
-    
-    
 }
 
-//---------------------------------------------------------------
-// Register for screen connection and disconnection notifications
+#pragma mark Screen connection and disconnection notifications
 
 - (void)setUpScreenConnectionNotificationHandlers
 {
@@ -120,14 +118,14 @@
 - (void)handleScreenDidDisconnectNotification:(NSNotification*)aNotification
 {
     
-    NSLog(@"Disconnect from screen");
+    NSLog(@"Screen lots, disconnect from it");
     
     if (self.secondWindow)
     {
         // Hide and then delete the window.
         self.secondWindow.hidden = YES;
         self.secondWindow = nil;
-        
+        [self turnOffSecondScreen];
     }
     
 }
@@ -136,14 +134,11 @@
 {
     //handle showing items
     if ( imagePrefix && self.secondWindow) {
-        NSLog(@"I am going to look for images with the prefix %@",imagePrefix);
         
         NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:
                           [[NSBundle mainBundle] bundlePath] error:nil];
         foundImagesWithPrefix = [files filteredArrayUsingPredicate:
                                  [NSPredicate predicateWithFormat:@"SELF BEGINSWITH %@", imagePrefix]];
-        
-        NSLog(@"%@", foundImagesWithPrefix);
         
         if ([foundImagesWithPrefix count] > 0 ) {
             
@@ -155,18 +150,18 @@
                                                     repeats:YES];
         }
         
-        
     } else {
         
-        NSLog(@"There is no content to display yet");
+        NSLog(@"Connected to screen but there is no content to display yet");
         displayedImage.image = [UIImage imageNamed:@"inflightdefault"];
     }
-    
-    
 }
 
 - (void)cycleImage
 {
+    
+    //cycle through available images and show it on the secondary display
+    
     NSString *currentImageName = [foundImagesWithPrefix objectAtIndex:currentImageIndex];
     
     if ( currentImageIndex == [foundImagesWithPrefix count]-1 ) {
@@ -181,6 +176,8 @@
 
 - (void)turnOffSecondScreen
 {
+    //reset content
+    
     [timer invalidate];
     foundImagesWithPrefix = nil;
     displayedImage.image = [UIImage imageNamed:@"inflightdefault"];

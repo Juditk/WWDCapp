@@ -17,6 +17,8 @@
     self = [super init];
     if (self) {
         
+        //initialise the object with the details needed by the viewController
+        
         projectName  = [projectDictionary objectForKey:@"ProjectName"];
         projectBlurb = [projectDictionary objectForKey:@"ProjectBlurb"];
         moreInfoURL  = [projectDictionary objectForKey:@"ProjectURL"];

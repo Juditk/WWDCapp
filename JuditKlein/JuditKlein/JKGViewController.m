@@ -178,11 +178,9 @@
         JKGCountryViewController *countryViewController = segue.destinationViewController;
         
         NSDictionary *countryInformation = [[JKGDatabase sharedDatabase]loadCountryWithShortName:countryCode];
-        NSLog(@"I have the following information for this country: %@",countryInformation);
         
         if ( countryInformation ) {
             JKGCountry *country = [[JKGCountry alloc]initWithCountryDictionary:countryInformation];
-            NSLog(@"%@",country);
             [countryViewController setCountry:country];
             [countryViewController setCountryName:country.countryName];
         }
@@ -306,6 +304,7 @@
 
 - (IBAction)replayBriefing:(id)sender
 {
+    NSLog(@"Reply safety briefing button tapped");
     [self performSegueWithIdentifier:@"safetyVideo" sender:self];
 }
 

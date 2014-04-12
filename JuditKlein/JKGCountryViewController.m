@@ -32,17 +32,14 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.navigationItem.title = countryName;
     
+    //set the localised Passbook icon for the button
+    
     if ( [countryName isEqualToString:@"Germany"] | [countryName isEqualToString:@"Hungary"] ) {
         [passbookLocalButton setImage:[UIImage imageNamed:countryName] forState:UIControlStateNormal];
     } else {
         [passbookLocalButton setImage:[UIImage imageNamed:@"passbooken"] forState:UIControlStateNormal];
     }
     passbookLocalButton.exclusiveTouch = YES;
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
     
 }
 
@@ -62,7 +59,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"Calling Num Rows %lu",(unsigned long)[[country countryProjects]count]);
+    NSLog(@"Calling %lu rows for this country",(unsigned long)[[country countryProjects]count]);
+    
     // Return the number of rows in the section.
     return [[country countryProjects]count];
 }

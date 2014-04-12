@@ -41,6 +41,7 @@
 
 - (IBAction)doneButton:(id)sender
 {
+    NSLog(@"Dismiss info view");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

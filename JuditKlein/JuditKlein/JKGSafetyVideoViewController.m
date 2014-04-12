@@ -33,15 +33,17 @@
 - (void)setUpStringToSpeak
 {
 
+    //Load the content of the plist into an array
+    
     NSString* path = [[NSBundle mainBundle] pathForResource:@"speechCommands" ofType:@"plist"];
     
     speechStrings = [NSArray arrayWithContentsOfFile:path];
     
     if ( speechStrings ) {
-        //NSLog(@"%@",speechStrings);
         currentSpeechItem = 0;
+    } else {
+        NSLog (@"No strings to speak were found");
     }
-
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -58,7 +60,6 @@
 -(void)speakLine:(NSString*)lineToSpeak
 {
     AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:lineToSpeak];
-    //utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
     utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-us"];
     utterance.rate = .25;
     [synthesizer speakUtterance:utterance];
@@ -74,7 +75,6 @@
     } else {
         [self dismissViewControllerAnimated:YES completion:nil];
     }
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -85,6 +85,7 @@
 
 - (IBAction)skipSafeyBriefing:(id)sender
 {
+    NSLog(@"Skip safety briefing");
     [self.synthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
     self.synthesizer = nil;
     [self dismissViewControllerAnimated:YES completion:nil];

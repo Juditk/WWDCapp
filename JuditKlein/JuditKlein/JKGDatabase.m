@@ -26,6 +26,8 @@
 {
     self = [super init];
     if (self) {
+        //set up dictionary which can be checked later to see if it has been visited.
+        
         countriesVisited = [[NSMutableDictionary alloc]initWithObjectsAndKeys:
                             @"AKL",@NO,
                             @"TVU", @NO,
@@ -42,6 +44,8 @@
 
 - (NSDictionary*)loadCountryWithShortName:(NSString*)countryShortName{
     
+    //returns the information from plist about a country.
+    
     if (!countryShortName)
         return nil;
     
@@ -52,7 +56,9 @@
     countryDict = [NSDictionary dictionaryWithContentsOfFile:path];
     
     if (countryDict) {
-        //NSLog(@"I have the following information for this country: %@",countryDict);
+        NSLog(@"I have information for this country.");
+    } else {
+        NSLog(@"I don't have any information for this country.");
     }
     
     return countryDict;

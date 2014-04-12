@@ -36,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge" translatesAutoresizingMaskIntoConstraints="NO" id="mBK-6V-Q4e">
-                                <rect key="frame" x="40" y="94" width="240" height="263"/>
+                                <rect key="frame" x="40" y="44" width="240" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ8-ub-n43">
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20B-e0-AKz">
-                                <rect key="frame" x="30" y="383" width="260" height="127"/>
+                                <rect key="frame" x="30" y="358" width="260" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Achievement Unlocked!
@@ -72,13 +72,13 @@ congratulations, you've visited all the countries and collected all the stamps.<
                             <constraint firstItem="20B-e0-AKz" firstAttribute="leading" secondItem="UOP-B7-WF4" secondAttribute="leading" constant="30" id="0Yt-f0-dZN"/>
                             <constraint firstAttribute="bottom" secondItem="vQ8-ub-n43" secondAttribute="bottom" constant="20" symbolic="YES" id="2Ns-1j-BZB"/>
                             <constraint firstItem="thk-HL-lQl" firstAttribute="leading" secondItem="UOP-B7-WF4" secondAttribute="leading" id="5Lf-Od-ovM"/>
-                            <constraint firstItem="20B-e0-AKz" firstAttribute="top" secondItem="mBK-6V-Q4e" secondAttribute="bottom" constant="26" id="BCT-9w-p84"/>
-                            <constraint firstItem="vQ8-ub-n43" firstAttribute="top" secondItem="20B-e0-AKz" secondAttribute="bottom" constant="8" symbolic="YES" id="Grf-af-h0Q"/>
+                            <constraint firstItem="20B-e0-AKz" firstAttribute="top" secondItem="mBK-6V-Q4e" secondAttribute="bottom" constant="51" id="BCT-9w-p84"/>
+                            <constraint firstItem="vQ8-ub-n43" firstAttribute="top" secondItem="20B-e0-AKz" secondAttribute="bottom" constant="33" id="Grf-af-h0Q"/>
                             <constraint firstItem="thk-HL-lQl" firstAttribute="centerX" secondItem="mBK-6V-Q4e" secondAttribute="centerX" id="Kjt-NJ-CBx"/>
                             <constraint firstItem="thk-HL-lQl" firstAttribute="top" secondItem="UOP-B7-WF4" secondAttribute="top" id="LWu-DG-ejq"/>
                             <constraint firstItem="20B-e0-AKz" firstAttribute="centerX" secondItem="mBK-6V-Q4e" secondAttribute="centerX" id="QKH-T6-waU"/>
                             <constraint firstItem="vQ8-ub-n43" firstAttribute="centerX" secondItem="20B-e0-AKz" secondAttribute="centerX" id="aVL-0Y-fyW"/>
-                            <constraint firstItem="mBK-6V-Q4e" firstAttribute="top" secondItem="6tK-Ku-lWQ" secondAttribute="bottom" constant="94" id="tI4-vz-hES"/>
+                            <constraint firstItem="mBK-6V-Q4e" firstAttribute="top" secondItem="6tK-Ku-lWQ" secondAttribute="bottom" constant="44" id="tI4-vz-hES"/>
                         </constraints>
                     </view>
                     <connections>

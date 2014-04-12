@@ -28,6 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //UI and formatting
+    
     backgroundImage.image = [UIImage imageNamed:@"bgcolour"];
     
     [self.navigationController setNavigationBarHidden:NO animated:YES];
@@ -43,19 +46,20 @@
     textView.text = contentString;
     textView.dataDetectorTypes = UIDataDetectorTypeLink;
     textView.linkTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithRed:(222/255.0) green:(177/255.0) blue:(73/255.0) alpha:1], NSUnderlineStyleAttributeName: [NSNumber numberWithInt:NSUnderlineStyleSingle]};
-
+    
+    //set up the content on the secondary display
     
     [[JKGSecondScreenViewController sharedManager]setImagePrefix:projectDetail.imagePrefix];
     [[JKGSecondScreenViewController sharedManager]showSecondScreenContent];
-
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
+    //reset the content on the secondary display
+    
     [[JKGSecondScreenViewController sharedManager]turnOffSecondScreen];
     [[JKGSecondScreenViewController sharedManager]setImagePrefix:nil];
     [[JKGSecondScreenViewController sharedManager]setCurrentImageIndex:0];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,15 +68,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
