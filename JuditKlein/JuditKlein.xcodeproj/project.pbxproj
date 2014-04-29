@@ -121,7 +121,6 @@
 		B2E9A2BB18F07D3700B1EC87 /* JKGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2BA18F07D3700B1EC87 /* JKGAppDelegate.m */; };
 		B2E9A2BE18F07D3700B1EC87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A2BC18F07D3700B1EC87 /* Main.storyboard */; };
 		B2E9A2C118F07D3700B1EC87 /* JKGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A2C018F07D3700B1EC87 /* JKGViewController.m */; };
-		B2E9A2C318F07D3700B1EC87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A2C218F07D3700B1EC87 /* Images.xcassets */; };
 		B2E9A2CA18F07D3700B1EC87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A2C918F07D3700B1EC87 /* XCTest.framework */; };
 		B2E9A2CB18F07D3700B1EC87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A2AA18F07D3700B1EC87 /* Foundation.framework */; };
 		B2E9A2CC18F07D3700B1EC87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E9A2AE18F07D3700B1EC87 /* UIKit.framework */; };
@@ -287,7 +286,6 @@
 		B2E9A2BD18F07D3700B1EC87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2E9A2BF18F07D3700B1EC87 /* JKGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKGViewController.h; sourceTree = "<group>"; };
 		B2E9A2C018F07D3700B1EC87 /* JKGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKGViewController.m; sourceTree = "<group>"; };
-		B2E9A2C218F07D3700B1EC87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2E9A2C818F07D3700B1EC87 /* JuditKleinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuditKleinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E9A2C918F07D3700B1EC87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B2E9A2D118F07D3700B1EC87 /* JuditKleinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JuditKleinTests-Info.plist"; sourceTree = "<group>"; };
@@ -442,7 +440,6 @@
 				B2E9A2DF18F07D6700B1EC87 /* Models */,
 				B2E9A2E018F07D6C00B1EC87 /* Views */,
 				B2E9A2E118F07D7A00B1EC87 /* Controllers */,
-				B2E9A2C218F07D3700B1EC87 /* Images.xcassets */,
 				B2E9A2B118F07D3700B1EC87 /* Supporting Files */,
 			);
 			path = JuditKlein;
@@ -934,7 +931,6 @@
 				B2DA13E518F51C18002F84FC /* akl72.jpeg in Resources */,
 				B2DA141C18F51C73002F84FC /* mel23.jpg in Resources */,
 				B2E9A36A18F27E3500B1EC87 /* Hungary.pkpass in Resources */,
-				B2E9A2C318F07D3700B1EC87 /* Images.xcassets in Resources */,
 				B2DA141B18F51C73002F84FC /* mel22.jpg in Resources */,
 				B2DA13C818F51BEE002F84FC /* akl41.jpeg in Resources */,
 				B2DA13C918F51BEE002F84FC /* akl42.jpg in Resources */,
