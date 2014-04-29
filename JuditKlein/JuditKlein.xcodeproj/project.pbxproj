@@ -153,6 +153,7 @@
 		B2E9A36A18F27E3500B1EC87 /* Hungary.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36418F27E3500B1EC87 /* Hungary.pkpass */; };
 		B2E9A36B18F27E3500B1EC87 /* New Zealand.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36518F27E3500B1EC87 /* New Zealand.pkpass */; };
 		B2E9A36C18F27E3500B1EC87 /* USA.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36618F27E3500B1EC87 /* USA.pkpass */; };
+		B2EB5DEE190F33EE00484A94 /* License in Resources */ = {isa = PBXBuildFile; fileRef = B2EB5DED190F33EE00484A94 /* License */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,6 +327,7 @@
 		B2E9A36418F27E3500B1EC87 /* Hungary.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hungary.pkpass; sourceTree = "<group>"; };
 		B2E9A36518F27E3500B1EC87 /* New Zealand.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Zealand.pkpass"; sourceTree = "<group>"; };
 		B2E9A36618F27E3500B1EC87 /* USA.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = USA.pkpass; sourceTree = "<group>"; };
+		B2EB5DED190F33EE00484A94 /* License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +398,7 @@
 		B2E9A29E18F07D3600B1EC87 = {
 			isa = PBXGroup;
 			children = (
+				B2EB5DED190F33EE00484A94 /* License */,
 				B2E9A2B018F07D3700B1EC87 /* JuditKlein */,
 				B2E9A2CF18F07D3700B1EC87 /* JuditKleinTests */,
 				B2E9A2A918F07D3700B1EC87 /* Frameworks */,
@@ -915,6 +918,7 @@
 				B2DA139218F51B92002F84FC /* txl05.jpeg in Resources */,
 				B2DA139018F51B92002F84FC /* txl03.jpeg in Resources */,
 				B2DA144B18F51CC6002F84FC /* bud01.jpeg in Resources */,
+				B2EB5DEE190F33EE00484A94 /* License in Resources */,
 				B2DA13DD18F51C02002F84FC /* akl62.jpeg in Resources */,
 				B2DA13FA18F51C36002F84FC /* akl93.jpeg in Resources */,
 				B2414DA718F788AF00344256 /* akl20.jpg in Resources */,
@@ -1166,11 +1170,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Judit Klein (SJHA8F7B6X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JuditKlein/JuditKlein-Prefix.pch";
 				INFOPLIST_FILE = "JuditKlein/JuditKlein-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1181,11 +1187,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Judit Klein (SJHA8F7B6X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JuditKlein/JuditKlein-Prefix.pch";
 				INFOPLIST_FILE = "JuditKlein/JuditKlein-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
