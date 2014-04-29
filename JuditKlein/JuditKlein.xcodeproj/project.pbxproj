@@ -153,6 +153,7 @@
 		B2E9A36B18F27E3500B1EC87 /* New Zealand.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36518F27E3500B1EC87 /* New Zealand.pkpass */; };
 		B2E9A36C18F27E3500B1EC87 /* USA.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B2E9A36618F27E3500B1EC87 /* USA.pkpass */; };
 		B2EB5DEE190F33EE00484A94 /* License in Resources */ = {isa = PBXBuildFile; fileRef = B2EB5DED190F33EE00484A94 /* License */; };
+		B2EB5DF0190F3E8F00484A94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2EB5DEF190F3E8F00484A94 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,6 +327,7 @@
 		B2E9A36518F27E3500B1EC87 /* New Zealand.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Zealand.pkpass"; sourceTree = "<group>"; };
 		B2E9A36618F27E3500B1EC87 /* USA.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = USA.pkpass; sourceTree = "<group>"; };
 		B2EB5DED190F33EE00484A94 /* License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
+		B2EB5DEF190F3E8F00484A94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,6 +442,7 @@
 				B2E9A2DF18F07D6700B1EC87 /* Models */,
 				B2E9A2E018F07D6C00B1EC87 /* Views */,
 				B2E9A2E118F07D7A00B1EC87 /* Controllers */,
+				B2EB5DEF190F3E8F00484A94 /* Images.xcassets */,
 				B2E9A2B118F07D3700B1EC87 /* Supporting Files */,
 			);
 			path = JuditKlein;
@@ -956,6 +959,7 @@
 				B2DA13AB18F51BC7002F84FC /* akl10.jpg in Resources */,
 				B2DA145218F51CC6002F84FC /* bud09.jpg in Resources */,
 				B2DA145C18F5BDDB002F84FC /* akl02.jpeg in Resources */,
+				B2EB5DF0190F3E8F00484A94 /* Images.xcassets in Resources */,
 				B2DA13CA18F51BEE002F84FC /* akl43.jpg in Resources */,
 				B2DA13F018F51C24002F84FC /* akl84.jpg in Resources */,
 				B2DA144E18F51CC6002F84FC /* bud04.jpeg in Resources */,
