@@ -1,11 +1,29 @@
 {
   "images" : [
     {
+      "extent" : "full-screen",
+      "idiom" : "iphone",
+      "subtype" : "736h",
+      "filename" : "newlaunch.png",
+      "minimum-system-version" : "8.0",
+      "orientation" : "portrait",
+      "scale" : "3x"
+    },
+    {
+      "extent" : "full-screen",
+      "idiom" : "iphone",
+      "subtype" : "667h",
+      "filename" : "newlaunch2.png",
+      "minimum-system-version" : "8.0",
+      "orientation" : "portrait",
+      "scale" : "2x"
+    },
+    {
       "orientation" : "portrait",
       "idiom" : "iphone",
+      "filename" : "homescreensmall.png",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "homescreensmall.png",
       "scale" : "2x"
     },
     {
