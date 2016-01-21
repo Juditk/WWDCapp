@@ -60,7 +60,7 @@
 -(void)speakLine:(NSString*)lineToSpeak
 {
     AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:lineToSpeak];
-    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-us"];
+//    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-US"];
     utterance.rate = .50;
     [synthesizer speakUtterance:utterance];
 }
