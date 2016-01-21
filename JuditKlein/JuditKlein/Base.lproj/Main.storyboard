@@ -413,11 +413,11 @@ To me, that is what WWDC is about - bringing together developers from around the
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbo-3e-nMS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pbo-3e-nMS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="cm3-fM-9p2">
-                                <rect key="frame" x="20" y="92" width="280" height="375"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="cm3-fM-9p2">
+                                <rect key="frame" x="16" y="64" width="288" height="403"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -426,7 +426,7 @@ To me, that is what WWDC is about - bringing together developers from around the
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOe-Jz-eKM">
-                                <rect key="frame" x="100" y="514" width="120" height="34"/>
+                                <rect key="frame" x="133" y="514" width="54" height="34"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -437,9 +437,16 @@ To me, that is what WWDC is about - bringing together developers from around the
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="EOe-Jz-eKM" firstAttribute="leading" secondItem="tbB-YU-Ltr" secondAttribute="leading" constant="100" id="0hS-Qz-avF"/>
-                            <constraint firstAttribute="trailing" secondItem="EOe-Jz-eKM" secondAttribute="trailing" constant="100" id="Fk2-MU-2ap"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cm3-fM-9p2" secondAttribute="leading" id="APV-m4-bTR"/>
+                            <constraint firstItem="EOe-Jz-eKM" firstAttribute="top" secondItem="cm3-fM-9p2" secondAttribute="bottom" constant="47" id="Hi1-fv-dzw"/>
+                            <constraint firstItem="Pbo-3e-nMS" firstAttribute="height" secondItem="tbB-YU-Ltr" secondAttribute="height" id="XYq-1v-AIm"/>
+                            <constraint firstItem="Pbo-3e-nMS" firstAttribute="width" secondItem="tbB-YU-Ltr" secondAttribute="width" id="dhX-CZ-u9Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cm3-fM-9p2" secondAttribute="trailing" id="eNK-Sf-BzW"/>
+                            <constraint firstItem="Pbo-3e-nMS" firstAttribute="centerY" secondItem="tbB-YU-Ltr" secondAttribute="centerY" id="pIV-oP-DyR"/>
                             <constraint firstAttribute="bottom" secondItem="EOe-Jz-eKM" secondAttribute="bottom" constant="20" id="phT-Ye-pTB"/>
+                            <constraint firstItem="cm3-fM-9p2" firstAttribute="top" secondItem="zXV-B5-5O1" secondAttribute="bottom" constant="20" id="qPS-G6-qP4"/>
+                            <constraint firstItem="Pbo-3e-nMS" firstAttribute="centerX" secondItem="tbB-YU-Ltr" secondAttribute="centerX" id="rSR-de-cux"/>
+                            <constraint firstItem="EOe-Jz-eKM" firstAttribute="centerX" secondItem="tbB-YU-Ltr" secondAttribute="centerX" id="s0B-gI-ObT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j2d-nu-OCX"/>
