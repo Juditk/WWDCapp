@@ -42,10 +42,12 @@
         NSString *urlString = [NSString stringWithFormat:@"\n\nMore information: %@",projectDetail.moreInfoURL];
         [contentString appendString:urlString];
     }
-    
+    textView.scrollEnabled = NO;
     textView.text = contentString;
     textView.dataDetectorTypes = UIDataDetectorTypeLink;
     textView.linkTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithRed:(222/255.0) green:(177/255.0) blue:(73/255.0) alpha:1], NSUnderlineStyleAttributeName: [NSNumber numberWithInt:NSUnderlineStyleSingle]};
+    textView.scrollEnabled = YES;
+
     
     //set up the content on the secondary display
     

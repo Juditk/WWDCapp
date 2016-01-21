@@ -95,7 +95,7 @@
 
 - (IBAction)destinationAKL:(id)sender
 {
-    NSLog(@"Let's go to New Zealand!");
+    NSLog(@"Hello World!");
     countryCode = @"AKL";
     [[[JKGDatabase sharedDatabase]countriesVisited]setObject:@YES forKey:countryCode];
 

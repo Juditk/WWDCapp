@@ -61,7 +61,7 @@
 {
     AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:lineToSpeak];
     utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-us"];
-    utterance.rate = .25;
+    utterance.rate = .50;
     [synthesizer speakUtterance:utterance];
 }
 
