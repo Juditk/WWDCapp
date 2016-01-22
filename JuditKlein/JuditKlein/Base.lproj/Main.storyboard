@@ -69,14 +69,16 @@ congratulations, you've visited all the countries and collected all the stamps.<
                         <constraints>
                             <constraint firstItem="20B-e0-AKz" firstAttribute="leading" secondItem="UOP-B7-WF4" secondAttribute="leading" constant="30" id="0Yt-f0-dZN"/>
                             <constraint firstAttribute="bottom" secondItem="vQ8-ub-n43" secondAttribute="bottom" constant="20" symbolic="YES" id="2Ns-1j-BZB"/>
-                            <constraint firstItem="thk-HL-lQl" firstAttribute="leading" secondItem="UOP-B7-WF4" secondAttribute="leading" id="5Lf-Od-ovM"/>
                             <constraint firstItem="20B-e0-AKz" firstAttribute="top" secondItem="mBK-6V-Q4e" secondAttribute="bottom" constant="51" id="BCT-9w-p84"/>
+                            <constraint firstItem="thk-HL-lQl" firstAttribute="height" secondItem="UOP-B7-WF4" secondAttribute="height" id="BuV-ua-QvL"/>
                             <constraint firstItem="vQ8-ub-n43" firstAttribute="top" secondItem="20B-e0-AKz" secondAttribute="bottom" constant="33" id="Grf-af-h0Q"/>
-                            <constraint firstItem="thk-HL-lQl" firstAttribute="centerX" secondItem="mBK-6V-Q4e" secondAttribute="centerX" id="Kjt-NJ-CBx"/>
-                            <constraint firstItem="thk-HL-lQl" firstAttribute="top" secondItem="UOP-B7-WF4" secondAttribute="top" id="LWu-DG-ejq"/>
+                            <constraint firstItem="thk-HL-lQl" firstAttribute="centerX" secondItem="UOP-B7-WF4" secondAttribute="centerX" id="Mes-56-4gA"/>
                             <constraint firstItem="20B-e0-AKz" firstAttribute="centerX" secondItem="mBK-6V-Q4e" secondAttribute="centerX" id="QKH-T6-waU"/>
+                            <constraint firstItem="thk-HL-lQl" firstAttribute="centerY" secondItem="UOP-B7-WF4" secondAttribute="centerY" id="WUm-mO-7Hb"/>
                             <constraint firstItem="vQ8-ub-n43" firstAttribute="centerX" secondItem="20B-e0-AKz" secondAttribute="centerX" id="aVL-0Y-fyW"/>
+                            <constraint firstItem="vQ8-ub-n43" firstAttribute="centerX" secondItem="UOP-B7-WF4" secondAttribute="centerX" id="rdG-HK-Bnr"/>
                             <constraint firstItem="mBK-6V-Q4e" firstAttribute="top" secondItem="6tK-Ku-lWQ" secondAttribute="bottom" constant="44" id="tI4-vz-hES"/>
+                            <constraint firstItem="thk-HL-lQl" firstAttribute="width" secondItem="UOP-B7-WF4" secondAttribute="width" id="yy4-lw-C2p"/>
                         </constraints>
                     </view>
                     <connections>
@@ -273,8 +275,12 @@ To me, that is what WWDC is about - bringing together developers from around the
                                     <action selector="destinationSFO:" destination="Yyd-as-VEp" eventType="touchUpInside" id="dfl-XA-Rfe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL1-n7-lll">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL1-n7-lll">
                                 <rect key="frame" x="120" y="435" width="80" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="sJG-uC-wW1"/>
+                                    <constraint firstAttribute="width" constant="80" id="zGF-IH-vfs"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -353,11 +359,13 @@ To me, that is what WWDC is about - bringing together developers from around the
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YXu-pb-Hln" firstAttribute="top" secondItem="D9v-SK-GVU" secondAttribute="bottom" constant="83" id="20f-xU-MR4"/>
+                            <constraint firstItem="BL1-n7-lll" firstAttribute="centerX" secondItem="aEA-d9-MBw" secondAttribute="centerX" id="2gc-Ew-G7E"/>
                             <constraint firstItem="KtE-1b-U86" firstAttribute="top" secondItem="YFp-Yb-pId" secondAttribute="bottom" constant="20" id="2x8-0U-tAA"/>
                             <constraint firstItem="X1y-Sy-dVv" firstAttribute="top" secondItem="zha-p4-8sp" secondAttribute="bottom" constant="1" id="593-tV-TQi"/>
                             <constraint firstAttribute="centerX" secondItem="WQb-gN-ZOM" secondAttribute="centerX" id="6qd-0K-QhK"/>
                             <constraint firstItem="s4Q-XR-gtE" firstAttribute="leading" secondItem="YFp-Yb-pId" secondAttribute="trailing" constant="8" id="B9O-Fd-xSc"/>
                             <constraint firstAttribute="bottom" secondItem="aLR-8D-QZz" secondAttribute="bottom" id="CZt-Z4-3YH"/>
+                            <constraint firstItem="YFp-Yb-pId" firstAttribute="top" secondItem="BL1-n7-lll" secondAttribute="bottom" constant="35" id="G7d-3J-xtv"/>
                             <constraint firstItem="A4u-KS-Bbt" firstAttribute="top" secondItem="zha-p4-8sp" secondAttribute="bottom" constant="64" id="K4E-Dd-fCr"/>
                             <constraint firstItem="s4Q-XR-gtE" firstAttribute="trailing" secondItem="ybl-dq-WAe" secondAttribute="trailing" id="KEF-Wf-hhS"/>
                             <constraint firstItem="A4u-KS-Bbt" firstAttribute="centerX" secondItem="D9v-SK-GVU" secondAttribute="centerX" id="LyY-Je-3Jl"/>
@@ -417,7 +425,7 @@ To me, that is what WWDC is about - bringing together developers from around the
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="cm3-fM-9p2">
-                                <rect key="frame" x="16" y="64" width="288" height="403"/>
+                                <rect key="frame" x="16" y="69" width="288" height="398"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -426,7 +434,11 @@ To me, that is what WWDC is about - bringing together developers from around the
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOe-Jz-eKM">
-                                <rect key="frame" x="133" y="514" width="54" height="34"/>
+                                <rect key="frame" x="100" y="514" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="8Xo-TT-DOy"/>
+                                    <constraint firstAttribute="height" constant="40" id="HeH-wd-tAz"/>
+                                </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -438,13 +450,13 @@ To me, that is what WWDC is about - bringing together developers from around the
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="cm3-fM-9p2" secondAttribute="leading" id="APV-m4-bTR"/>
-                            <constraint firstItem="EOe-Jz-eKM" firstAttribute="top" secondItem="cm3-fM-9p2" secondAttribute="bottom" constant="47" id="Hi1-fv-dzw"/>
                             <constraint firstItem="Pbo-3e-nMS" firstAttribute="height" secondItem="tbB-YU-Ltr" secondAttribute="height" id="XYq-1v-AIm"/>
                             <constraint firstItem="Pbo-3e-nMS" firstAttribute="width" secondItem="tbB-YU-Ltr" secondAttribute="width" id="dhX-CZ-u9Q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cm3-fM-9p2" secondAttribute="trailing" id="eNK-Sf-BzW"/>
+                            <constraint firstItem="EOe-Jz-eKM" firstAttribute="top" secondItem="Pbo-3e-nMS" secondAttribute="bottom" constant="-54" id="kbw-HM-6Ec"/>
+                            <constraint firstItem="EOe-Jz-eKM" firstAttribute="top" secondItem="cm3-fM-9p2" secondAttribute="bottom" constant="47" id="mFl-OZ-SYm"/>
                             <constraint firstItem="Pbo-3e-nMS" firstAttribute="centerY" secondItem="tbB-YU-Ltr" secondAttribute="centerY" id="pIV-oP-DyR"/>
-                            <constraint firstAttribute="bottom" secondItem="EOe-Jz-eKM" secondAttribute="bottom" constant="20" id="phT-Ye-pTB"/>
-                            <constraint firstItem="cm3-fM-9p2" firstAttribute="top" secondItem="zXV-B5-5O1" secondAttribute="bottom" constant="20" id="qPS-G6-qP4"/>
+                            <constraint firstItem="cm3-fM-9p2" firstAttribute="top" secondItem="zXV-B5-5O1" secondAttribute="bottom" constant="25" id="qPS-G6-qP4"/>
                             <constraint firstItem="Pbo-3e-nMS" firstAttribute="centerX" secondItem="tbB-YU-Ltr" secondAttribute="centerX" id="rSR-de-cux"/>
                             <constraint firstItem="EOe-Jz-eKM" firstAttribute="centerX" secondItem="tbB-YU-Ltr" secondAttribute="centerX" id="s0B-gI-ObT"/>
                         </constraints>
